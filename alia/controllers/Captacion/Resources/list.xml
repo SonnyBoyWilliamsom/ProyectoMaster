@@ -1,0 +1,20 @@
+<lists>
+    <list name="Mostrar_Admin" id="id">
+        <cell label_es="Referencia"><field key_bd="c_captacion" /></cell>
+        <cell label_es="Fecha de Entrada"><field key_bd="f_entrada" preprocessing="true"/></cell>
+        <cell label_es="Sigla Zona"><field key_bd="sigla_zona" /></cell>
+        <cell label_es="Precio Inicial"><field key_bd="precio_ultima" /></cell>
+        <cell label_es="Precio Último"><field key_bd="precio_inicial" /></cell>
+        <cell label_es="Dirección"><field key_bd="direccion" /></cell>
+        <cell label_es="Nº Dormitorios"><field key_bd="n_dormitorios" /></cell>
+        <cell label_es="Nombre Propietario"><field key_bd="nombre_propietario" /></cell>
+        <cell label_es="Teléfono"><field key_bd="tlf" /></cell>
+        <cell label_es="Agente Captador"><field key_bd="agente_captador" preprocessing="true"/></cell>
+        <cell label_es="Fecha Último Contacto"><field key_bd="f_ultimo_contacto" preprocessing="true"/></cell>
+        <cell label_es="Acción">
+            <field key_bd="" content="Ver/Editar" events-id="8" />
+            <field key_bd="" content="Eliminar" events-id="9" />
+        </cell>
+        <cell label_es="Eliminar Seleccionados" events-id="6"><field key_bd="" delete-selected="true" /></cell>
+    </list>
+</lists>

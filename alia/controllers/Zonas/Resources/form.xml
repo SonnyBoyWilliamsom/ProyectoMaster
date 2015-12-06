@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forms>
+    <form name="Nuevo_Zona" subindex="16">
+        <field key_bd="id" tipo="text" obligatorio="1" label_es="Código" longitud="30" />
+        <field key_bd="nombre" tipo="text" obligatorio="1" label_es="Zona" longitud="30" />
+        <field key_bd="activa" tipo="checkbox" obligatorio="1" label_es="Activa" longitud="30" />
+    </form>
+    <form name="Modificar_Zona" subindex="21">
+        <field key_bd="id" tipo="text" obligatorio="1" label_es="Código" longitud="30" />
+        <field key_bd="nombre" tipo="text" obligatorio="1" label_es="Zona" longitud="30" />
+        <field key_bd="activa" tipo="checkbox" obligatorio="1" label_es="Activa" longitud="30" />
+    </form>
+</forms>

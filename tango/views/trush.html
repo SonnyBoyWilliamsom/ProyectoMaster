@@ -1,0 +1,291 @@
+$(document).ready(function(){
+        $('#login').click(function(){
+            $.fancybox({
+                href: "#loginForm",
+                afterClose: function(){
+                    $('#messageLog').hide();
+                }
+            });
+        });
+
+        $('#loginForm').validate({
+            rules:{
+                email:{
+                    required:true,
+                    email: true
+                },
+                password:{
+                    required: true,
+                    minlenght: 6
+                }
+            },
+            messages:{
+                email:{
+                    required: 'Email needed.',
+                    email: 'Enter a valid email.'
+                },
+                password:{
+                    required: 'Password needed',
+                    minlenght: 'Password min 6'
+                }
+            }
+
+
+        });
+
+        $('#loginForm').bind('submit',function(){
+            $.fancybox.showLoading();
+            $.ajax({
+                type: 'POST',
+                cache: false,
+                url: './admin/loginAJAX.php',
+                data: $(this).serializeArray(),
+                success: function(data){
+                    $.fancybox(data);
+                }
+
+            });
+            return false;
+        });
+   });
+
+
+/*
+        $.('#loginForm').bind('submit', function(){
+            $.(this).validate({
+                rules: {
+                    email:{
+                        required: true, 
+                        email: true
+                    },
+                    password:{
+                        required: true,
+                        minlenght: 6
+                    }
+                },
+                messages:{
+                    email:{
+                        required: 'Please enter your email.',
+                        email: 'Please enter a valid email address.'
+                    },
+                    password:{
+                        required: 'Plase enter your password.',
+                        minlenght: 'Password must be at least 6 characters.'
+                    }
+                }
+
+            });
+        });
+*/
+
+  
+
+
+        /*$("#register").click(function(){
+           
+            $.fancybox({
+              href: '#regForm',
+              afterClose: function(){
+                $('#reg_error').hide();
+              }
+            });
+            $('#regForm').bind('submit',function(){
+                console.log($('#name').val().length);
+                if(($('#name').val().length<1)){
+                    $('#reg_error').show();
+                    $.fancybox.update();
+                    return false;
+                }
+                $.fancybox.showLoading();
+                $.ajax({
+                    type: 'POST',
+                    cache: false,
+                    url: './admin/index.php',
+                    data: $(this).serializeArray(),
+                    success: function(data){
+                        location.href = "./admin";
+                    }
+                });
+                return false;
+            });
+
+        });
+
+        $("#login").click(function(){
+           
+            $.fancybox({
+              href: '#loginForm',
+              afterClose: function(){
+                $('#login_error').hide();
+              }
+            });
+
+
+            //Sustituir este metodo por el metodo de submit
+
+            $('#loginForm').submit(function(){
+                var formData = $(this).serializeArray();
+                $.post('./admin/loginAJAX.php',formData,processData);
+
+                function processData(data){
+                    if(data=='pass'){
+                        $('#messageLog').html("<p class ='success'> Login Correct!</p>");
+                    }else{
+                        $('#loginForm').empty();
+                        $('#loginForm').prepend("<p class ='error'> Login incorrect!</p>");
+                    }
+                }
+                return false;
+            });*/
+
+
+
+
+
+            /*$('#logForm').bind('submit',function(){
+                console.log($('#logForm #logEmail').val().length);
+                if($('#logEmail').val().length<1 || $('#logPassword').val().length<1){
+                    $('#login_error').show();
+                    $.fancybox.update();
+                    return false;
+                }
+                $.fancybox.showLoading();
+                $.ajax({
+                    type: 'POST',
+                    cache: false,
+                    url: './admin/index.php',
+                    data: $(this).serializeArray(),
+                    success: function(data){
+                        location.href = "./admin";
+                    }
+                });
+                return false;
+            });*/
+   
+
+
+
+
+
+          /*$('#login').click(function(){
+            $.fancybox({
+                href: "#loginForm",
+                afterClose: function(){
+                    $('#messageLog').hide();
+                }
+            });
+        });
+        $('#loginForm').bind('submit',function(){
+            $.fancybox.showLoading();
+            $.ajax({
+                type: 'POST',
+                cache: false,
+                url: $(this).attr('action'),
+                data: $(this).serializeArray(),
+                success: function(data){
+                    if(data==200){
+                        location.href = "../";
+                    }else{
+                        $.fancybox(data);
+                    }
+                    
+                }
+
+            });
+            return false;
+        });*/
+
+
+/*================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================ index de admin, no funciona porque tiene salida antes del HTML
+
+
+
+<?php 
+ini_set('display_errors','1');
+require_once './functions/library.php';
+require_once './core/init.php'; 
+//para obtener el host de nuestro proyecto podemos acceder de la siguiente manera:
+/*$setPath = 'mysql/host';
+if(Config::get($setPath)){
+    echo Config::get($setPath);
+}else{
+    echo 'Valor no establecido en $GLOBAL';
+} *///Aqui se hace la llamada de la clase Config.php. Gracias a la función spl_autoload_register() cada clase se carga solo cuando se la llama (y no todas las clases están ya cargadas)
+
+/*$users = DBcorePDO::getInstance()->delete('users', array('name','=','Jairo'));
+if($users){
+    echo 'ok';
+}
+
+if(Session::exists('login')){
+    echo Session::flash('login');
+}
+if(Session::exists('success')){
+       echo Session::flash('success');
+}
+//Update!!!!
+DBcorePDO::getInstance()->update('users', array('id_user'=>'47') ,array('name'=>'Carlin',
+                                                                         'site'=>'youtube.com', 
+                                                                         'field'=>'comedy', 
+                                                                         'surname'=>'Carlin', 
+                                                                        ));
+
+/*
+$user = DBcorePDO::getInstance()->get('users', array('name','=','benito'));
+echo $user->count();
+*/
+$user = new User();
+if($user->isLoggedIn()){
+?>
+<p>Hello <?php echo ucfirst(escape($user->data()->name)); ?>. <a href="./logout.php" title="Logout">Logout</a></p>
+<p><?php echo ucfirst(escape($user->data()->name)); ?>. <a href="./update.php" title="Update">Update</a></p>
+
+<?php
+}else{
+    Redirect::to('./login/');
+}
+$users = DBcorePDO::getInstance()->getAll('users');
+
+foreach ($users->getResults() as $user) {
+        echo $user->name.'<br>';
+}
+if($users){
+    echo 'ok';
+}
+
+/*if($users->count()<1){
+    echo 'usuario no encontrado';
+}else{
+    echo 'usuario entontrado: '.$users->count();
+    foreach ($users->getResults() as $user) {
+        echo $user->surname;
+    }
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        .navbar{
+            margin-bottom: 0px;
+        }
+    </style>
+  
+    <title>Tango</title>
+
+    <link href="./css/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/bootstrap/css/jquery.fancybox.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./js/bootstrap_js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap_js/jquery.fancybox.pack.js"></script>
+
+}*/
+
+
+?>
+
+
+
+================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================*/

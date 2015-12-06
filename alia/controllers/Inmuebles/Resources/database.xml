@@ -1,0 +1,132 @@
+<tables>
+    <table name="inmuebles">
+        <column name="c_inmuebles" type="bigint" sign="false" null="false" default="0"/>
+        <column name="activo_01" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="referencia" type="varchar" sign="false" null="true" default="0"/>
+        <column name="tipo" type="varchar" sign="false" null="true" default="0"/>
+        <column name="pais" type="varchar" sign="false" null="true" default="0"/>
+        <column name="provincia" type="varchar" sign="false" null="true" default="0"/>
+        <column name="poblacion" type="varchar" sign="false" null="true" default="0"/>
+        <column name="zona" type="varchar" sign="false" null="true" default="0"/>
+        <column name="cp" type="varchar" sign="false" null="true" default="0"/>
+        <column name="posicion_exacta_01" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="latitud" type="varchar" sign="false" null="true" default="0"/>
+        <column name="longitud" type="varchar" sign="false" null="true" default="0"/>
+        <column name="direccion_visible_01" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="direccion_completa_01" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="direccion_tipo_via" type="varchar" sign="false" null="true" default="0"/>
+        <column name="direccion_calle" type="varchar" sign="false" null="true" default="0"/>
+        <column name="direccion_numero" type="varchar" sign="false" null="true" default="0"/>
+        <column name="direccion_piso" type="varchar" sign="false" null="true" default="0"/>
+        <column name="direccion_letra" type="varchar" sign="false" null="true" default="0"/>
+        <column name="direccion_escalera" type="varchar" sign="false" null="true" default="0"/>
+        <column name="precio_compra" type="float" sign="false" null="true" default="0"/>
+        <column name="precio_alquiler" type="float" sign="false" null="true" default="0"/>
+        <column name="precio_traspaso" type="float" sign="false" null="true" default="0"/>
+        <column name="precio_alquiler_opcion_compra" type="float" sign="false" null="true" default="0"/>
+        <column name="informacion_gestion" type="varchar" sign="false" null="true" default="0"/>
+        <column name="n_habitaciones" type="tinyint" sign="false" null="true" default="0"/>
+        <column name="n_alcobas" type="tinyint" sign="false" null="true" default="0"/>
+        <column name="n_banos" type="tinyint" sign="false" null="true" default="0"/>
+        <column name="n_aseos" type="tinyint" sign="false" null="true" default="0"/>
+        <column name="m2_utiles" type="float unsigned" sign="false" null="true" default="0"/>
+        <column name="m2_construidos" type="float" sign="false" null="true" default="0"/>
+        <column name="m2_terreno" type="float unsigned" sign="false" null="true" default="0"/>
+        <column name="estado_vivienda" type="tinyint" sign="false" null="false" default="-1"/>
+        <column name="accesible_01" type="tinyint" sign="false" null="false" default="-1"/>
+        <column name="amueblado_01" type="tinyint" sign="false" null="false" default="-1"/>
+        <column name="garaje_01" type="tinyint" sign="false" null="false" default="-1"/>
+        <column name="calefaccion" type="tinyint" sign="false" null="false" default="-1"/>
+        <column name="aire_acondicionado_01" type="tinyint" sign="false" null="false" default="-1"/>
+        <column name="piscina_01" type="tinyint" sign="false" null="false" default="-1"/>
+        <column name="jardin_01" type="tinyint" sign="false" null="false" default="-1"/>
+        <column name="trastero_01" type="tinyint" sign="false" null="false" default="-1"/>
+        <column name="ascensor_01" type="tinyint" sign="false" null="false" default="-1"/>
+        <column name="terraza_01" type="tinyint" sign="false" null="false" default="-1"/>
+        <column name="piso_banco_01" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="vpo_01" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="reservado_01" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="exclusividad_01" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="exclusividad_documento_url" type="varchar" sign="false" null="true" default="0"/>
+        <column name="fecha_captacion" type="date" sign="false" null="true" default="0"/>
+        <column name="fecha_fin_mandato" type="date" sign="false" null="true" default="0"/>
+        <column name="referencia_catastral" type="varchar" sign="false" null="true" default="0"/>
+        <column name="idufir" type="varchar" sign="false" null="true" default="0"/>
+        <column name="rc_tomo" type="varchar" sign="false" null="true" default="0"/>
+        <column name="rc_libro" type="varchar" sign="false" null="true" default="0"/>
+        <column name="rc_folio" type="varchar" sign="false" null="true" default="0"/>
+        <column name="rc_finca" type="varchar" sign="false" null="true" default="0"/>
+        <column name="rc_registro" type="varchar" sign="false" null="true" default="0"/>
+        <column name="eficiencia_energetica_tipo" type="varchar" sign="false" null="true" default="0"/>
+        <column name="eficiencia_energetica_entramite_01" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="eficiencia_energetica_fecvalid" type="date" sign="false" null="true" default="0"/>
+        <column name="eficiencia_energetica_emisiones" type="float" sign="false" null="true" default="0"/>
+        <column name="eficiencia_energetica_energia" type="float" sign="false" null="true" default="0"/>
+        <column name="eficiencia_energetica_energia_tipo" type="varchar" sign="false" null="true" default="0"/>
+        <column name="eficiencia_energetica_documento_url" type="varchar" sign="false" null="true" default="0"/>
+        <column name="eficiencia_energetica_documento_visible_01" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="eficiencia_energetica_n_expediente" type="varchar" sign="false" null="true" default="0"/>
+        <column name="descripcion" type="varchar" sign="false" null="true" default="0"/>
+        <column name="c_promociones" type="mediumint" sign="false" null="true" default="0"/>
+        <column name="nombre_comercializador" type="varchar" sign="false" null="true" default="0"/>
+        <column name="email_comercializador" type="varchar" sign="false" null="true" default="0"/>
+        <column name="telefono_comercializador" type="varchar" sign="false" null="true" default="0"/>
+        <column name="texto_reclamo" type="varchar" sign="false" null="true" default="0"/>
+        <column name="ref_alia" type="varchar" sign="false" null="true" default="0"/>
+        <column name="id_agente" type="bigint" sign="false" null="false" default="0"/>
+        <column name="id_empresa" type="bigint" sign="false" null="false" default="0"/>
+        <column name="honorarios" type="float" sign="false" null="false" default="0"/>
+        <column name="honorarios_antiguo" type="varchar" sign="false" null="true" default="0"/>
+        <column name="disponibilidad" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="antiguedad" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="unidad_antiguedad" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="orientacion_solar" type="tinyint" sign="false" null="true" default="-1"/>
+        <column name="altura_edificio" type="float" sign="false" null="true" default="0"/>
+        <column name="altura_inmueble" type="float" sign="false" null="true" default="0"/>
+        <column name="armarios_empotrados_01" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="tendedero_01" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="portero_01" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="suelos" type="tinyint" sign="false" null="true" default="0"/>
+        <column name="urbanizacion_01" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="visible_01" type="tinyint" sign="false" null="false" default="1"/>
+        <column name="gestion" type="tinyint" sign="false" null="true" default="0"/>
+        <column name="estado_gestion" type="int" sign="false" null="false" default="0"/>
+        <column name="fecha_venta" type="date" sign="false" null="true" default="0"/>
+        <column name="fecha_registro" type="date" sign="false" null="true" default="0"/>
+        <column name="compradora" type="bigint" sign="false" null="false" default="0"/>
+        <column name="compartida_01" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="suelos_antiguo" type="varchar" sign="false" null="true" default="0"/>
+        <column name="orientacion_antiguo" type="varchar" sign="false" null="true" default="0"/>
+        <column name="precio_venta" type="float" sign="false" null="true" default="0"/>
+        <column name="propietario" type="varchar" sign="false" null="true" default="0"/>
+        <column name="telefono_propietario" type="varchar" sign="false" null="true" default="0"/>
+        <column name="correo_propietario" type="varchar" sign="false" null="true" default="0"/>
+        <column name="fecha_entrega" type="date" sign="false" null="true" default="0"/>
+    </table>
+    <table name="inmuebles_documentos">
+        <column name="c_documentos" type="bigint" sign="false" null="false" default="0"/>
+        <column name="c_inmuebles" type="bigint" sign="false" null="false" default="0"/>
+        <column name="activo_01" type="tinyint" sign="false" null="true" default="0"/>
+        <column name="url" type="varchar" sign="false" null="true" default="0"/>
+        <column name="descripcion_corta" type="varchar" sign="false" null="true" default="0"/>
+    </table>
+    <table name="inmuebles_fotos">
+        <column name="c_fotos" type="bigint" sign="false" null="false" default="0"/>
+        <column name="c_inmuebles" type="bigint" sign="false" null="false" default="0"/>
+        <column name="activo_01" type="tinyint" sign="false" null="true" default="0"/>
+        <column name="url" type="varchar" sign="false" null="true" default="0"/>
+        <column name="principal" type="tinyint" sign="false" null="true" default="0"/>
+        <column name="descripcion_corta" type="varchar" sign="false" null="true" default="0"/>
+        <column name="tipo" type="tinyint" sign="false" null="true" default="0"/>
+        <column name="orden" type="int" sign="false" null="true" default="0"/>
+        <column name="marca" type="tinyint" sign="false" null="true" default="0"/>
+        <column name="redimensionada" type="tinyint" sign="false" null="true" default="0"/>
+    </table>
+    <table name="inmuebles_videos">
+        <column name="c_videos" type="bigint" sign="false" null="false" default="0"/>
+        <column name="c_inmuebles" type="bigint" sign="false" null="false" default="0"/>
+        <column name="activo_01" type="tinyint" sign="false" null="true" default="0"/>
+        <column name="codigo_youtube" type="varchar" sign="false" null="true" default="0"/>
+        <column name="url" type="varchar" sign="false" null="true" default="0"/>
+    </table>
+</tables>

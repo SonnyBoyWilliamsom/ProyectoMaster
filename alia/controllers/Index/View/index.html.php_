@@ -1,0 +1,172 @@
+<?php
+ini_set("display_errors",1);
+    include_once(getRoot() . "/controllers/Inmuebles/Controller/inmuebles.class.php");
+    include_once(getRoot() . "/controllers/Empresas/Controller/empresas.class.php");
+    $inmueblesController = new Inmuebles($this->db);
+    $buscador=$inmueblesController->getFormulario("Buscador");
+    $empresasController=new Empresas($this->db);
+    $campos=$empresasController->getLista("Empresas");
+    $empresasController->cargar();
+    $empresas=$empresasController->obtenerRegistros();
+?>
+<body>
+    <script>
+        var rtime;
+        var timeout = false;
+        var delta = 200;
+        $(document).ready(function () {
+            $("#sliderMain").slider({
+                exclude: '#busquedaRapida',
+                time: 5000,
+                transition: 600,
+                arrows: {selector: '#flechas-cursos', left: 'img/flechaLeft03.png', right: 'img/flechaRight03.png'}
+            });
+            centrarTitulos();
+            centrarCajaSlider();
+            $("#form").validate(true);
+            $("#form2").validate(true);
+        });
+        $(window).resize(function () {
+            centrarTitulos();
+            rtime = new Date();
+            if (timeout === false) {
+                timeout = true;
+                setTimeout(resizeend, delta);
+            }
+        });
+        function mostrarFormularioSegundo() {
+            $("#sombra").show();
+            var form = $("#formulario-promocion");
+            var ventana = $(window);
+            var izquierda = (ventana.width() - form.width()) / 2;
+            var arriba = (ventana.height() - form.height()) / 2;
+            form.css({"top": arriba, "left": izquierda}).show();
+        }
+        function centrarResultadoSegundo() {
+            var form = $("#resultado");
+            var ventana = $(window);
+            var izquierda = (ventana.width() - form.width()) / 2;
+            var arriba = (ventana.height() - form.height()) / 2;
+            form.css({"top": arriba, "left": izquierda}).show();
+        }
+        function ocultarFormularioSegundo() {
+            $("#formulario-promocion,#sombra").hide();
+        }
+        function mostrarFormularioTercero() {
+            $("#sombra").show();
+            var form = $("#formulario-promocion2");
+            var ventana = $(window);
+            var izquierda = (ventana.width() - form.width()) / 2;
+            var arriba = (ventana.height() - form.height()) / 2;
+            form.css({"top": arriba, "left": izquierda}).show();
+        }
+        function centrarResultadoTercero() {
+            var form = $("#resultado");
+            var ventana = $(window);
+            var izquierda = (ventana.width() - form.width()) / 2;
+            var arriba = (ventana.height() - form.height()) / 2;
+            form.css({"top": arriba, "left": izquierda}).show();
+        }
+        function ocultarFormularioTercero() {
+            $("#formulario-promocion2,#sombra").hide();
+        }
+    </script>
+    <?php include_once("header.php"); ?>
+    <main>
+        <section id="sliderMain">
+            <div class="slider segundo">
+                <div class="auxiliar">
+                    <div class="caja">
+
+                    </div>
+                </div>
+                <img src="/img/slider-01.jpg" alt="Slider" />
+            </div>
+            <div class="slider segundo">
+                <div class="auxiliar">
+                    <div class="caja">
+
+                    </div>
+                </div>
+                <img src="/img/slider-01.jpg" alt="Slider" />
+            </div>
+            <div class="slider segundo">
+                <div class="auxiliar">
+                    <div class="caja">
+
+                    </div>
+                </div>
+                <img src="img/alia.jpg" alt="Slider" />
+            </div>
+            <div id="flechas-cursos"></div>
+            <div id="busquedaRapida">
+                <h2>Búsqueda Rápida</h2>
+                <?php Formularios::printFormulario($buscador,$this->getDB()); ?>
+            </div>
+        </section>
+        <div class='content'>
+            <section id='asociados'>
+                <div id='locateAsociados'></div>
+                <p>Nuestros Asociados, la Garantía de Alia</p>
+                <p>Alía es la Asociación Local de Inmobilbiaria de Alcorcón formada por profsionales con amplia experiencia en la gestión inmobiliaria. Los expertos de Alía, le asesoran y dan accso de manera directa e instantánea a la más extensa, completa y actualizada base de pisos en Alcorcón. Nuestra misión es satisfacer las necesidades de oferta y demanda mediante la colaboración eficaz, continua y activa entre profesionales bien formados.</p>
+                <p>Asociación Local de Inmobiliarias de Alcorcón, entidad jurídica sin ánimo de lucro, inscrita en el Registro General de Asociacioones de la Consejería de Presidencia y Justicia de la Comunidad de Madrid con el nº: 33054. Abril 2012. C.I.F: G-86427754.</p>
+                <div id='empresas'>
+                    <div id="empresas">
+                        <?php foreach($empresas as $empresa): ?>
+                        <div class="empresaInfo">
+                            <div class='infoLogo <?php echo $empresa['codigo_empresa']; ?>' style="background-image:url('<?php echo $empresa['logo']; ?>')"></div>
+                            <p class='infoTlf'><?php echo $empresa['telefono']; ?></p>
+                            <p class='infoAddress'><a href="http://<?php echo $empresa['web']; ?>" target="_blank"><?php echo $empresa['web']; ?></a></p>
+                        </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section id='noticias'>
+            <div class='content'>
+                <p>Últimas noticias</p>
+                <p>Los peligros de equivocarse en el precio</p>
+                <p>Uno de los errores más comunes y costosos para el vendedor es poner un precio muy alto  su propiedad pensando que con ello conseguirá vender mejor. Todos queremos vender mejor al mejor precio posible.</p>
+            </div>
+        </section>
+        <section id='membership'>
+            <div class='content'>
+                <p>¿Quieres ser de Alía?</p>
+                <p>Te lo ponemos fácil mira aquí.</p>
+            </div>
+        </section>
+        <section id='asociadoMes'>
+            <div class='content'>
+                <p>Asociado del mes</p>
+                 <div id="fotoAsociadoMes">
+                     <div class="fotoInfo">
+                         <p>Jose María Alfaro</p>
+                     <p>GERENTE</p>
+                     </div>
+
+                </div>
+
+                <div class='infoWrap'>
+                     <div class='asociadoMesLogo'><span></span></div>
+                    <p> Desde 2004, Nuevo Milenio inmobiliaria ofrece sus servicios de consultoría, asesoramiento y gestión inmobiliaria en ALCORCÓN.</p>
+                    <p> Defendiendo los intereses de sus clientes y aportando auténtico valor añadido profesional, podemos presumir de contar con la satifacción y referencias de nuestros clientes como principal aval profesional.</p>
+                    <div class='mesInfo'>
+
+                        <div class='iconsAsociado'>
+                            <div class='iconA'></div>
+                            <div class='iconA'></div>
+                            <div class='iconA'></div>
+                        </div>
+                        <div class='contact'>
+                            <span style="opacity:0;">www.example.com</span>
+                            <p>C/Oslo, 5 · 28922 · Alcorcón . Madrid</p>
+                            <p>www.nuevomilenio-inmo.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <?php include_once("footer.php"); ?>
+</body>

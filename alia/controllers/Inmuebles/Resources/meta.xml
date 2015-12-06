@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<all-metas>
+    <metas render="ficha">
+        <title>Alcorcón Alia - Inmueble [referencia]</title>
+        <meta name="Description" content="Descripción de prueba" />
+        <meta name="Keywords" content="" />
+        <meta property="og:title" content="Alcorcon Alia - Inmueble [referencia]" />
+        <meta property="og:description" content="[descripcion]" />
+        <meta property="og:image" content="[imagen_pcpal]" />
+        <meta property="og:image:secure_url" content="[imagen_pcpal]" />
+        <meta property="og:url" content="http://www.alcorconalia.com/ficha/[referencia]" />
+        <meta property="og:site_name" content="http://www.alcorconalia.com" />
+        <meta property="og:locale" content="es_ES" />
+    </metas>
+    <metas render="buscador">
+        <title>Alcorcón Alia - Búsqueda</title>
+        <meta name="Description" content="Descripción de prueba" />
+        <meta name="Keywords" content="" />
+    </metas>
+</all-metas>

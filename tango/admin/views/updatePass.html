@@ -1,0 +1,29 @@
+<div class="form">
+	<form action=<?php echo $_SERVER['PHP_SELF'] ?> method="post" > 
+	<div class="input" style='background: #cdcdcd;'>
+		<p>Enter only if you want to change password</p>
+		<label for="password">Current Password</label>
+		<input type="password" id="password" name="currentPassword">
+		<div>
+			<label for="newPassword">Enter your new Password </label>
+			<input type="password" name="newPassword" id="newPass">
+			<label for="passCheck">Repeat Password </label>
+			<input type="password" name="newPassCheck" id="passCheck">
+		</div>
+		
+	</div>
+
+	<div class="input" style="background:tomato">
+		<p> Enter if you want to change your email. Your current email is: <?php echo $user->data()->email ?> </p>
+		<label for="email">New Email</label>
+		<input type="email" name="email" id="email">
+		<label for="passwordEmail">Password</label>
+		<input type="password" name="passwordEmail" id="passwordEmail">
+		</label>
+	</div>
+	<input type="hidden" name="token" value=<?php echo Token::generate() ?>>
+	<input type="submit" name="update" value="Update">
+
+<p> <a href="./update.php" title="Update">Back</a></p>
+
+</div>

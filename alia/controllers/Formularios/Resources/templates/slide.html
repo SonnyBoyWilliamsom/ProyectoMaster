@@ -1,0 +1,20 @@
+<label for="[key_bd]">[label]</label>
+<input type="hidden" name="[key_bd]" class="[key_bd]">
+<div id="slider-[key_bd]"></div>
+<script>
+    $("#slider-[key_bd]").slider({
+        value: 0,
+        min: [min],
+        max: [max],
+        step: [step],
+        change: function( event, ui ){
+            $("#slider-[key_bd]").parent().children(".[key_bd]").val(ui.value);
+        }
+    }).each(function() {
+        var vals = [max] - [min];
+        for (var i = 0; i <= vals; i+=[step]){
+            var el = $('<label>'+(i+[min])+'</label>').css('left',(i/vals*100)+'%');
+            $("#slider-[key_bd]").append(el);
+        }
+    });
+</script>

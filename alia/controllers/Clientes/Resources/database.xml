@@ -1,0 +1,27 @@
+<tables>
+    <table name="clientes">
+        <column name="id" type="bigint" sign="false" null="false" default="0"/>
+        <column name="nombre" type="varchar" sign="false" null="true" default="0"/>
+        <column name="apellidos" type="varchar" sign="false" null="true" default="0"/>
+        <column name="mail" type="varchar" sign="false" null="true" default="0"/>
+        <column name="inquilino" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="arrendatario" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="comprador" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="vendedor" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="telefono" type="varchar" sign="false" null="true" default="0"/>
+        <column name="telefono_1" type="varchar" sign="false" null="true" default="0"/>
+        <column name="mail_1" type="varchar" sign="false" null="true" default="0"/>
+        <column name="primera_importacion" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="codigo_primera_importacion" type="varchar" sign="false" null="true" default="0"/>
+        <column name="anotaciones" type="text" sign="false" null="false" default="0"/>
+        <column name="id_agente" type="bigint" sign="false" null="false" default="0"/>
+        <column name="fecha_entrada" type="date" sign="false" null="true" default="0"/>
+        <column name="referencia_interes" type="varchar" sign="false" null="true" default="0"/>
+        <column name="zona_interes" type="varchar" sign="false" null="true" default="0"/>
+        <column name="c_zona" type="bigint" sign="false" null="true" default="0"/>
+        <column name="presupuesto_min" type="bigint" sign="false" null="false" default="0"/>
+        <column name="presupuesto_max" type="bigint" sign="false" null="false" default="0"/>
+        <column name="id_agente_entrada" type="int" sign="false" null="true" default="0"/>
+        <column name="origen" type="varchar" sign="false" null="true" default="0"/>
+    </table>
+</tables>

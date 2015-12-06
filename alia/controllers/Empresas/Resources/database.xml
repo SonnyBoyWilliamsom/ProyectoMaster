@@ -1,0 +1,16 @@
+<tables>
+    <table name="agentes">
+        <column name="id" type="bigint" sign="false" null="false" default="0"/>
+        <column name="nombre" type="varchar" sign="false" null="false" default="0"/>
+        <column name="apellidos" type="varchar" sign="false" null="true" default="0"/>
+        <column name="mail" type="varchar" sign="false" null="true" default="0"/>
+        <column name="tlf" type="varchar" sign="false" null="true" default="0"/>
+        <column name="twitter" type="varchar" sign="false" null="true" default="0"/>
+        <column name="foto" type="varchar" sign="false" null="true" default="0"/>
+        <column name="eslogan" type="varchar" sign="false" null="true" default="0"/>
+        <column name="codigo_agente" type="varchar" sign="false" null="true" default="0"/>
+        <column name="activacion" type="tinyint" sign="false" null="true" default="0"/>
+        <column name="permisos" type="smallint" sign="false" null="true" default="0"/>
+        <column name="password" type="varchar" sign="false" null="true" default="0"/>
+    </table>
+</tables>

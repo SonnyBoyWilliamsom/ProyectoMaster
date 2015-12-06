@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selects>
+    <select name="c_zona" ajax="true" />
+    <select name="c_poblacion" ajax="true" />
+    <select name="c_provincia" controller="provincias" />
+    <select name="c_tipo" controller="tipos" />
+    <select name="id_cliente" controller="clientes" />
+    <select name="ascensor">
+        <option value="-1">Indiferente</option>
+        <option value="1">Sí</option>
+        <option value="0">No</option>
+    </select>
+    <select name="piscina">
+        <option value="-1">Indiferente</option>
+        <option value="1">Sí</option>
+        <option value="0">No</option>
+    </select>
+    <select name="trastero">
+        <option value="-1">Indiferente</option>
+        <option value="1">Sí</option>
+        <option value="0">No</option>
+    </select>
+    <select name="garaje">
+        <option value="-1">Indiferente</option>
+        <option value="1">Sí</option>
+        <option value="0">No</option>
+    </select>
+    <select name="dormitorios">
+        <option value="-1">Indiferente</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4+</option>
+    </select>
+    <select name="tipo">
+        <option value="-1"> - </option>
+        <option value="1">Compra</option>
+        <option value="2">Alquiler</option>
+    </select>
+    <select name="presupuesto" ajax="true" />
+    <select name="anno">
+        <option value="-1">-</option>
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        <option value="2003">2003</option>
+        <option value="2004">2004</option>
+        <option value="2005">2005</option>
+        <option value="2006">2006</option>
+        <option value="2007">2007</option>
+        <option value="2008">2008</option>
+        <option value="2009">2009</option>
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+    </select>
+    <select name="mes">
+        <option value="-1">-</option>
+        <option value="01">Enero</option>
+        <option value="02">Febrero</option>
+        <option value="03">Marzo</option>
+        <option value="04">Abril</option>
+        <option value="05">Mayo</option>
+        <option value="06">Junio</option>
+        <option value="07">Julio</option>
+        <option value="08">Agosto</option>
+        <option value="09">Septiembre</option>
+        <option value="10">Octubre</option>
+        <option value="11">Noviembre</option>
+        <option value="12">Diciembre</option>
+    </select>
+</selects>

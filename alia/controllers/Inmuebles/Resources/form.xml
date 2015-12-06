@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forms>
+    <form name="Fotos" subindex="7" file="templateFotos"></form>
+    <form name="Referencia" subindex="-1" action="/buscar-referencia.php">
+        <field key_bd="referencia" tipo="text" obligatorio="0" label_es="Referencia" />
+    </form>
+    <form name="Buscador" subindex="-1" action="/mostrar.php" submit-text="¡ENCUENTRA!">
+        <field key_bd="tipo" id-options="tipo" tipo="select" obligatorio="0" label_es="Tipo inmueble" longitud="50" />
+        <field key_bd="n_habitaciones" tipo="select" id-options="n_habitaciones" obligatorio="0" label_es="Dormitorios" longitud="3" />
+        <field key_bd="zona" id-options="zona-index" tipo="select" obligatorio="0" label_es="Zona" longitud="100" />
+    </form>
+    <form name="Vendido" subindex="14" submit-text="Guardar">
+        <field key_bd="fecha_venta" tipo="text" obligatorio="1" label_es="Fecha de Venta" data-validation="text" />
+        <field key_bd="precio_vendido" tipo="text" obligatorio="1" label_es="Precio de Venta" longitud="50" data-validation="number"/>
+        <field key_bd="compartida" tipo="checkbox" obligatorio="1" label_es="Compartida" longitud="3" />
+        <field key_bd="compradora" tipo="select" id-options="empresa" obligatorio="0" label_es="Empresa Compradora" longitud="3" />
+        <field key_bd="c_inmuebles" tipo="hidden" />
+    </form>
+    <form name="Nuevo" submit-text="Guardar" titles="Datos de localización y gestión,Datos característicos detallados del inmueble" subindex="0" page="0" total-pages="2" events-id="4">
+        <field key_bd="activo_01" id-options="estado" tipo="checkbox" obligatorio="0" label_es="Visible" longitud="1" value="1"/>
+        <field key_bd="zona" id-options="zona-index" tipo="select" obligatorio="0" label_es="Zona" longitud="100" data-validation="select"/>
+        <field key_bd="tipo" id-options="tipo" tipo="select" obligatorio="0" label_es="Tipo" longitud="50" data-validation="select"/>
+        <field key_bd="direccion_tipo_via" id-options="direccion_tipo_via" tipo="select" obligatorio="0" label_es="Tipo de vía" longitud="20" data-validation="select"/>
+        <field key_bd="direccion_calle" tipo="text" obligatorio="0" label_es="Nombre Vía" longitud="100" data-validation="text"/>
+        <field key_bd="direccion_numero" tipo="text" obligatorio="0" label_es="Número" longitud="20" data-validation="number"/>
+        <field key_bd="direccion_escalera" tipo="text" obligatorio="0" label_es="Escalera" longitud="20" />
+        <field key_bd="direccion_piso" tipo="text" obligatorio="0" label_es="Piso/Altura" longitud="20" data-optional="number"/>
+        <field key_bd="altura_edificio" tipo="text" obligatorio="0" label_es="Altura Edificio" longitud="20" />
+        <field key_bd="direccion_letra" tipo="text" obligatorio="0" label_es="Letra/Número" longitud="20" data-optional="text"/>
+        <field key_bd="gestion" id-options="gestion" tipo="select" obligatorio="0" label_es="Gestión" longitud="20" events-id="3" data-validation="select"/>
+        <field key_bd="exclusividad_01" tipo="checkbox" obligatorio="0" label_es="Exclusividad" longitud="1" events-id="5"/>
+        <field key_bd="vpo_01" tipo="checkbox" obligatorio="0" label_es="VPO" longitud="1" />
+        <field key_bd="nombre_comercializador" tipo="text" obligatorio="0" label_es="Nombre del agente" longitud="200" data-validation="select"/>
+        <field key_bd="telefono_comercializador" tipo="text" obligatorio="0" label_es="Teléfono del agente" longitud="25" data-validation="telephone"/>
+        <field key_bd="email_comercializador" tipo="text" obligatorio="0" label_es="Dirección de email del agente" longitud="100" data-validation="mail"/>
+        <field key_bd="propietario" tipo="text" obligatorio="0" label_es="Nombre del propietario" longitud="200" />
+        <field key_bd="telefono_propietario" tipo="text" obligatorio="0" label_es="Teléfono del propietario" longitud="25" data-optional="telephone"/>
+        <field key_bd="correo_propietario" tipo="text" obligatorio="0" label_es="Dirección de email del propietario" longitud="100" data-voptional="mail"/>
+        <field key_bd="fecha_entrega" tipo="text" obligatorio="0" label_es="Fecha de entrega de llaves" longitud="100" />
+        <field key_bd="id_empresa" label_es="Empresa" tipo="select" id-options="empresa" events-id="14" data-validation="select"/>
+        <field key_bd="referencia" tipo="text" obligatorio="0" label_es="Referencia" longitud="30" />
+        <field key_bd="fecha_captacion" tipo="text" obligatorio="0" label_es="Fecha de inicio" longitud="0" />
+        <field key_bd="fecha_fin_mandato" tipo="text" obligatorio="0" label_es="Fecha de fin de mandato" longitud="0" />
+        <field key_bd="piso_banco_01" tipo="checkbox" obligatorio="0" label_es="Piso banco" longitud="1" />
+        <field key_bd="precio_compra" tipo="text" obligatorio="0" label_es="Precio" longitud="0" />
+        <field key_bd="poblacion" tipo="hidden" value="Alcorcón"/>
+        <field key_bd="id_agente" tipo="hidden" />
+    </form>
+    <form name="Nuevo" page="1" total-pages="2" subindex="0">
+        <field key_bd="m2_construidos" tipo="text" obligatorio="0" label_es="M2 Construidos" longitud="0" data-validation="number"/>
+        <field key_bd="m2_utiles" tipo="text" obligatorio="0" label_es="M2 Útiles" longitud="0" data-validation="number"/>
+        <field key_bd="n_habitaciones" tipo="text" obligatorio="0" label_es="Nº de habitaciones" longitud="3" />
+        <field key_bd="n_aseos" tipo="text" obligatorio="0" label_es="Nº de aseos" longitud="3" />
+        <field key_bd="n_banos" tipo="text" obligatorio="0" label_es="Nº de baños" longitud="3" />
+        <field key_bd="ascensor_01" id-options="ascensor_01" tipo="select" obligatorio="0" label_es="Ascensor" longitud="4" />
+        <field key_bd="garaje_01" id-options="garaje_01" tipo="select" obligatorio="0" label_es="Garaje" longitud="4" />
+        <field key_bd="trastero_01" id-options="trastero_01" tipo="select" obligatorio="0" label_es="Trastero" longitud="4" />
+        <field key_bd="calefaccion_01" id-options="calefaccion_01" tipo="select" obligatorio="0" label_es="Calefacción" longitud="4" />
+        <field key_bd="aire_acondicionado_01" id-options="aire_acondicionado_01" tipo="select" obligatorio="0" label_es="Aire acondicionado" longitud="4" />
+        <field key_bd="terraza_01" id-options="terraza_01" tipo="select" obligatorio="0" label_es="Terraza" longitud="4" />
+        <field key_bd="piscina_01" id-options="piscina_01" tipo="select" obligatorio="0" label_es="Piscina" longitud="4" />
+        <field key_bd="jardin_01" id-options="jardin_01" tipo="select" obligatorio="0" label_es="Jardín" longitud="4" />
+        <field key_bd="amueblado_01" id-options="amueblado_01" tipo="select" obligatorio="0" label_es="Amueblado" longitud="4" />
+        <field key_bd="accesible_01" id-options="accesible_01" tipo="select" obligatorio="0" label_es="Accesible" longitud="4" />
+        <field key_bd="estado_vivienda" id-options="estado_vivienda" tipo="select" obligatorio="0" label_es="Estado del Inmueble" longitud="4" data-validation="select"/>
+        <field key_bd="orientacion_solar" id-options="orientacion_solar" tipo="select" obligatorio="0" label_es="Orientación Solar" longitud="4" />
+        <field key_bd="suelos" id-options="suelos" tipo="select" obligatorio="0" label_es="Suelos" longitud="4" />
+        <field key_bd="eficiencia_energetica_entramite_01" tipo="checkbox" obligatorio="0" label_es="Eficiencia energética en trámite" longitud="1" />
+        <field key_bd="eficiencia_energetica_tipo" id-options="eficiencia_energetica_tipo" tipo="select" obligatorio="0" label_es="CEE Emisiones Letra" longitud="1" />
+        <field key_bd="texto_reclamo" tipo="text" obligatorio="0" label_es="Texto de Reclamo" longitud="14" />
+        <field key_bd="honorarios" tipo="text" obligatorio="0" label_es="Honorarios" longitud="4" data-optional="number"/>
+        <field key_bd="antiguedad" id-options="antiguedad" tipo="select" obligatorio="0" label_es="Antigüedad" longitud="4" />
+        <field key_bd="armarios_empotrados_01" id-options="armarios_empotrados_01" tipo="select" obligatorio="0" label_es="Armarios empotrados" longitud="4" />
+        <field key_bd="tendedero_01" id-options="tendedero_01" tipo="select" obligatorio="0" label_es="Tendedero" longitud="1" />
+        <field key_bd="portero_01" id-options="portero_01" tipo="select" obligatorio="0" label_es="Portero" longitud="1" />
+        <field key_bd="urbanizacion_01" id-options="urbanizacion_01" tipo="select" obligatorio="0" label_es="Urbanización" longitud="14" />
+        <field key_bd="estado_gestion" label_es="Estado de Gestión" tipo="select" id-options="estado"/>
+        <field key_bd="descripcion" tipo="textarea" obligatorio="0" label_es="Descripción" longitud="3000" />
+        <field key_bd="provincia" tipo="hidden" value="Madrid"/>
+        <field key_bd="pais" tipo="hidden" value="España"/>
+    </form>
+    <form name="Modificar" submit-text="Guardar" titles="Datos de localización y gestión,Datos característicos detallados del inmueble" subindex="5" page="0" total-pages="2">
+        <field key_bd="activo_01" id-options="estado" tipo="checkbox" obligatorio="0" label_es="Visible" longitud="1" value="1"/>
+        <field key_bd="zona" id-options="zona-index" tipo="select" obligatorio="0" label_es="Zona" longitud="100" data-validation="select"/>
+        <field key_bd="tipo" id-options="tipo" tipo="select" obligatorio="0" label_es="Tipo" longitud="50" data-validation="select"/>
+        <field key_bd="direccion_tipo_via" id-options="direccion_tipo_via" tipo="select" obligatorio="0" label_es="Tipo de vía" longitud="20" data-validation="select"/>
+        <field key_bd="direccion_calle" tipo="text" obligatorio="0" label_es="Nombre Vía" longitud="100" data-validation="text"/>
+        <field key_bd="direccion_numero" tipo="text" obligatorio="0" label_es="Número" longitud="20" data-validation="number"/>
+        <field key_bd="direccion_escalera" tipo="text" obligatorio="0" label_es="Escalera" longitud="20" />
+        <field key_bd="direccion_piso" tipo="text" obligatorio="0" label_es="Piso/Altura" longitud="20" data-optional="number"/>
+        <field key_bd="altura_edificio" tipo="text" obligatorio="0" label_es="Altura Edificio" longitud="20" />
+        <field key_bd="direccion_letra" tipo="text" obligatorio="0" label_es="Letra/Número" longitud="20" data-optional="text"/>
+        <field key_bd="gestion" id-options="gestion" tipo="select" obligatorio="0" label_es="Gestión" longitud="20" events-id="3" data-validation="select"/>
+        <field key_bd="exclusividad_01" tipo="checkbox" obligatorio="0" label_es="Exclusividad" longitud="1" events-id="5"/>
+        <field key_bd="vpo_01" tipo="checkbox" obligatorio="0" label_es="VPO" longitud="1" />
+        <field key_bd="nombre_comercializador" tipo="text" obligatorio="0" label_es="Nombre del agente" longitud="200" data-validation="select"/>
+        <field key_bd="telefono_comercializador" tipo="text" obligatorio="0" label_es="Teléfono del agente" longitud="25" data-validation="telephone"/>
+        <field key_bd="email_comercializador" tipo="text" obligatorio="0" label_es="Dirección de email del agente" longitud="100" data-validation="mail"/>
+        <field key_bd="propietario" tipo="text" obligatorio="0" label_es="Nombre del propietario" longitud="200" />
+        <field key_bd="telefono_propietario" tipo="text" obligatorio="0" label_es="Teléfono del propietario" longitud="25" data-optional="telephone"/>
+        <field key_bd="correo_propietario" tipo="text" obligatorio="0" label_es="Dirección de email del propietario" longitud="100" data-voptional="mail"/>
+        <field key_bd="fecha_entrega" tipo="text" obligatorio="0" label_es="Fecha de entrega de llaves" longitud="100" />
+        <field key_bd="id_empresa" label_es="Empresa" tipo="select" id-options="empresa" events-id="14" data-validation="select"/>
+        <field key_bd="referencia" tipo="text" obligatorio="0" label_es="Referencia" longitud="30" />
+        <field key_bd="fecha_captacion" tipo="text" obligatorio="0" label_es="Fecha de inicio" longitud="0" />
+        <field key_bd="fecha_fin_mandato" tipo="text" obligatorio="0" label_es="Fecha de fin de mandato" longitud="0" />
+        <field key_bd="piso_banco_01" tipo="checkbox" obligatorio="0" label_es="Piso banco" longitud="1" />
+        <field key_bd="precio_compra" tipo="text" obligatorio="0" label_es="Precio" longitud="0" />
+        <field key_bd="poblacion" tipo="hidden" value="Alcorcón"/>
+        <field key_bd="id_agente" tipo="hidden" />
+        <field key_bd="c_inmuebles" tipo="hidden" />
+    </form>
+    <form name="Modificar" page="1" total-pages="2" subindex="5">
+        <field key_bd="m2_construidos" tipo="text" obligatorio="0" label_es="M2 Construidos" longitud="0" data-validation="number"/>
+        <field key_bd="m2_utiles" tipo="text" obligatorio="0" label_es="M2 Útiles" longitud="0" data-validation="number"/>
+        <field key_bd="n_habitaciones" tipo="text" obligatorio="0" label_es="Nº de habitaciones" longitud="3" />
+        <field key_bd="n_aseos" tipo="text" obligatorio="0" label_es="Nº de aseos" longitud="3" />
+        <field key_bd="n_banos" tipo="text" obligatorio="0" label_es="Nº de baños" longitud="3" />
+        <field key_bd="ascensor_01" id-options="ascensor_01" tipo="select" obligatorio="0" label_es="Ascensor" longitud="4" />
+        <field key_bd="garaje_01" id-options="garaje_01" tipo="select" obligatorio="0" label_es="Garaje" longitud="4" />
+        <field key_bd="trastero_01" id-options="trastero_01" tipo="select" obligatorio="0" label_es="Trastero" longitud="4" />
+        <field key_bd="calefaccion_01" id-options="calefaccion_01" tipo="select" obligatorio="0" label_es="Calefacción" longitud="4" />
+        <field key_bd="aire_acondicionado_01" id-options="aire_acondicionado_01" tipo="select" obligatorio="0" label_es="Aire acondicionado" longitud="4" />
+        <field key_bd="terraza_01" id-options="terraza_01" tipo="select" obligatorio="0" label_es="Terraza" longitud="4" />
+        <field key_bd="piscina_01" id-options="piscina_01" tipo="select" obligatorio="0" label_es="Piscina" longitud="4" />
+        <field key_bd="jardin_01" id-options="jardin_01" tipo="select" obligatorio="0" label_es="Jardín" longitud="4" />
+        <field key_bd="amueblado_01" id-options="amueblado_01" tipo="select" obligatorio="0" label_es="Amueblado" longitud="4" />
+        <field key_bd="accesible_01" id-options="accesible_01" tipo="select" obligatorio="0" label_es="Accesible" longitud="4" />
+        <field key_bd="estado_vivienda" id-options="estado_vivienda" tipo="select" obligatorio="0" label_es="Estado del Inmueble" longitud="4" data-validation="select"/>
+        <field key_bd="orientacion_solar" id-options="orientacion_solar" tipo="select" obligatorio="0" label_es="Orientación Solar" longitud="4" />
+        <field key_bd="suelos" id-options="suelos" tipo="select" obligatorio="0" label_es="Suelos" longitud="4" />
+        <field key_bd="eficiencia_energetica_entramite_01" tipo="checkbox" obligatorio="0" label_es="Eficiencia energética en trámite" longitud="1" />
+        <field key_bd="eficiencia_energetica_tipo" id-options="eficiencia_energetica_tipo" tipo="select" obligatorio="0" label_es="CEE Emisiones Letra" longitud="1" />
+        <field key_bd="texto_reclamo" tipo="text" obligatorio="0" label_es="Texto de Reclamo" longitud="14" />
+        <field key_bd="honorarios" tipo="text" obligatorio="0" label_es="Honorarios" longitud="4" data-optional="number"/>
+        <field key_bd="antiguedad" id-options="antiguedad" tipo="select" obligatorio="0" label_es="Antigüedad" longitud="4" />
+        <field key_bd="armarios_empotrados_01" id-options="armarios_empotrados_01" tipo="select" obligatorio="0" label_es="Armarios empotrados" longitud="4" />
+        <field key_bd="tendedero_01" id-options="tendedero_01" tipo="select" obligatorio="0" label_es="Tendedero" longitud="1" />
+        <field key_bd="portero_01" id-options="portero_01" tipo="select" obligatorio="0" label_es="Portero" longitud="1" />
+        <field key_bd="urbanizacion_01" id-options="urbanizacion_01" tipo="select" obligatorio="0" label_es="Urbanización" longitud="14" />
+        <field key_bd="estado_gestion" label_es="Estado de Gestión" tipo="select" id-options="estado"/>
+        <field key_bd="descripcion" tipo="textarea" obligatorio="0" label_es="Descripción" longitud="3000" />
+        <field key_bd="provincia" tipo="hidden" value="Madrid"/>
+        <field key_bd="pais" tipo="hidden" value="España"/>
+    </form>
+</forms>

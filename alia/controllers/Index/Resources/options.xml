@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selects>
+    <select name="horario" min="10" max="18" step="1" ></select>
+    <select name="quiero">
+        <option>Vender mi inmueble</option>
+        <option>Alquilar mi inmueble</option>
+        <option>Comprar un inmueble</option>
+        <option>Alquilar un inmueble</option>
+        <option>Asesoramiento</option>
+    </select>
+</selects>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forms>
+    <form name="Login" subindex="5" events="onsubmit='return validaFormu(this);'">
+        <field key_bd="usuario" tipo="text" obligatorio="true" label_es="Usuario" longitud="50"/>
+        <field key_bd="password" tipo="password" obligatorio="true" label_es="Password" longitud="100"/>
+    </form>
+    <form name="Nuevo" subindex="0">
+        <field key_bd="id" tipo="hidden" obligatorio="false" label_es="Código" longitud="0"/>
+        <field key_bd="nombre" tipo="text" obligatorio="true" label_es="Nombre" longitud="50"/>
+        <field key_bd="apellidos" tipo="text" obligatorio="true" label_es="Apellidos" longitud="150"/>
+        <field key_bd="mail" tipo="text" obligatorio="true" label_es="Correo" longitud="50"/>
+        <field key_bd="tlf" tipo="text" obligatorio="true" label_es="Teléfono" longitud="20"/>
+        <field key_bd="codigo_empresa" tipo="select" id-options="empresa" obligatorio="false" label_es="Código Empresa" longitud="50"/>
+        <field key_bd="permisos" id-options="permisos" tipo="select" obligatorio="true" label_es="Permisos" longitud="0"/>
+        <field key_bd="usuario" tipo="text" obligatorio="false" label_es="Usuario" longitud="50"/>
+        <field key_bd="password" tipo="password" obligatorio="true" label_es="Password" longitud="100"/>
+    </form>
+    <form name="Modificar" subindex="6">
+        <field key_bd="id" tipo="hidden" obligatorio="false" label_es="Código" longitud="0"/>
+        <field key_bd="nombre" tipo="text" obligatorio="true" label_es="Nombre" longitud="50"/>
+        <field key_bd="apellidos" tipo="text" obligatorio="true" label_es="Apellidos" longitud="150"/>
+        <field key_bd="mail" tipo="text" obligatorio="true" label_es="Correo" longitud="50"/>
+        <field key_bd="tlf" tipo="text" obligatorio="true" label_es="Teléfono" longitud="20"/>
+        <field key_bd="codigo_empresa" tipo="select" id-options="empresa" obligatorio="false" label_es="Código Empresa" longitud="50"/>
+        <field key_bd="permisos" id-options="permisos" tipo="select" obligatorio="true" label_es="Permisos" longitud="0"/>
+        <field key_bd="usuario" tipo="text" obligatorio="false" label_es="Usuario" longitud="50"/>
+        <field key_bd="password" tipo="password" obligatorio="true" label_es="Password" longitud="100"/>
+    </form>
+</forms>

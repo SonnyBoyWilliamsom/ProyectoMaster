@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('./fonts/font_icon/fontello.eot');
+  src: url('./fonts/font_icon/fontello.eot#iefix') format('embedded-opentype'),
+       url('./fonts/font_icon/fontello.woff') format('woff'),
+       url('./fonts/font_icon/fontello.ttf') format('truetype'),
+       url('./fonts/font_icon/fontello.svg#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/fontawesome-webfont.woff') format('woff'),
+        url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+        url('../fonts/fontawesome-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+header{
+    background: #F6F6F6;
+    position: relative;
+    padding-top: 10px;
+    box-shadow:  0px 0px 20px #000;
+    z-index: 99999;
+
+}
+
+header .contentHeader{
+    position: relative;
+    padding-bottom: 15px;
+}
+header .name_tlf{
+    display: inline-block;
+    float: left;
+}
+header .search_header{
+    position:absolute;
+    bottom: 10px;
+
+}
+header .logo{
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+
+}
+header .logo a{
+ background: url(../img/LogoAlia.png) no-repeat center;
+    background-size: contain;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+header .slogan{
+    width: 100px;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    right: 28%;
+}
+header .slogan span{
+    display: inline-block;
+    width: 100%;
+}
+header .contacto{
+    width: 200px;
+    position: absolute;
+    top:0;
+    right: 0;
+    text-align: right;
+
+}
+header .contacto p, header .contacto ul{
+    display: inline;
+}
+header .contacto ul li{
+    width: 32px;
+    height: 32px;
+    font-size: 27px;
+    text-align: center;
+    line-height: 32px;
+}
+header .contacto ul li a{
+    color: #fff;
+}
+header .acceso{
+    width: 250px;
+    position: absolute;
+    top:30%;
+    right: 0;
+    font-size: 12px;
+    text-align: right;
+}
+
+header .reference{
+    width: 90px;
+    position: absolute;
+    top: 57%;
+    right: 0;
+    text-align: right;
+}
+header input[type='text']{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border: 1px solid #ff0;
+}
+header input[type='submit']{
+    display:none;
+}
+header .navigation{
+    background:#FFCC01;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: -0.7px;
+    font-weight: bold;
+     text-align: justify;
+}
+
+header .navigation nav{
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+header .navigation nav ul li::before{
+    content:"·";
+    margin:0 4px;
+}
+header .navigation nav ul li:nth-child(1)::before{
+    display:none;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+
+}
+
+.icon-facebook-official:before {color:#000; content: '\e800'; } /* '' */
+.icon-youtube:before { color:#000; content: '\e801'; } /* '' */
+.icon-twitter:before {color:#000; content: '\e802'; } /* '' */
+.icon-cancel-circled:before {color:#fff; content: '\e803'; } /* '' */
+.icon-left-open:before {color:#fff; content: '\e804'; } /* '' */
+.icon-right-open:before {color:#fff; content: '\e805'; } /* '' */

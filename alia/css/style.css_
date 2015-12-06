@@ -1,0 +1,520 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    font-family: sans-serif;
+    color: #000;
+
+}
+li{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.content{
+    width: 960px;
+    margin: 0 auto;
+}
+/*SLIDER===============================================*/
+#sliderMain{
+
+    background-size: cover;
+
+    height: 420px;
+
+}
+#sliderMain #busquedaRapida{
+    width: 320px;
+
+    background: rgba(255,255,255,0.8);
+    position: absolute;
+    right: 19.5%;
+    top: 25px;
+}
+#sliderMain #busquedaRapida h2{
+    text-align: center;
+    background: #FFCC01;
+    text-transform: uppercase;
+    padding: 10px;
+}
+#sliderMain #busquedaRapida form{
+    width: 100%;
+     padding: 0px 20px;
+}
+#sliderMain #busquedaRapida form label{
+    display: block;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+#sliderMain #busquedaRapida form select{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border: 3px solid #FFCC01;
+}
+
+#sliderMain #busquedaRapida form input{
+    width: 100%;
+    background: #fff;
+    border: none;
+    border: 3px solid #FFCC01;
+    width: 120px;
+    padding: 5px 0px;
+    margin: 10px 76px;
+    text-transform: uppercase;
+}
+#sliderMain img{
+    width: 100%;
+}
+.slider {
+    width: 100%;
+}
+/*TITULOS==========================================================*/
+
+#noticias .content p:first-child, #asociados .content p:first-child,#asociadoMes .content > p:first-child{
+    font-size: 4.5em;
+}
+
+/*NUESTROS ASOCIADOS===============================================*/
+#asociados{
+    position: relative;
+    padding: 50px 0px;
+}
+#asociados p{
+  padding-bottom: 30px;
+    text-align: justify;
+}
+#asociados > p:nth-child(2){
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+#asociados #locateAsociados{
+    background: #FFCC01;
+    width: 80px;
+    height: 95px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    box-shadow: 3px 3px 18px #000;
+}
+#asociados #empresas {
+    height: 180px;
+    width: 100%;
+    position: relative;
+}
+#asociados #empresas .empresaInfo{
+    height: 100%;
+    width: 16.666667%;
+    float: left;
+}
+#asociados #empresas .empresaInfo p{
+    padding-top: 5px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+#asociados #empresas .empresaInfo p:nth-child(3){
+    font-size: 12px;
+}
+#asociados #empresas .empresaInfo .infoLogo{
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    background: #cdcdcd;
+    border: #FFCC01 solid 2px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#asociados #empresas .empresaInfo .infoLogo.SV,
+#asociados #empresas .empresaInfo .infoLogo.IL,
+#asociados #empresas .empresaInfo .infoLogo.NM,
+#asociados #empresas .empresaInfo .infoLogo.GL{
+    background-color:white;
+}
+#asociados #empresas .empresaInfo .infoLogo.GV{
+    background-color: #7D121D;
+}
+#asociados #empresas .empresaInfo .infoLogo.SH{
+    background-color: #b5e51d;
+}
+/*NOTICIAS===============================================*/
+#noticias, #membership, #asociadoMes{
+    text-align: center;
+       color: #fff;
+}
+#noticias{
+    background: #FFCC01;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+}
+#noticias p{
+    padding-bottom: 20px;
+}
+
+#noticias .content p:first-child, #membership .content p:first-child,
+#noticias .content p:first-child{
+    font-size: 4em;
+}
+
+/*QUIERES SER DE ALIA===============================================*/
+#membership{
+    background: grey;
+}
+#membership p{
+    padding: 25px 0px;
+}
+#membership .content p:nth-child(2){
+     font-size: 3em;
+}
+/*ASOCIADO DEL MES===============================================*/
+#asociadoMes{
+    background: #D91C09;
+    overflow: hidden;
+}
+#asociadoMes p{
+    padding: 25px 0px;
+}
+#asociadoMes .mesInfo{
+    overflow: hidden;
+}
+
+#asociadoMes .iconsAsociado{
+    text-align: center;
+    width: 70%;
+    float: left;
+}
+#asociadoMes .contact{
+    text-align: right;
+    width: 30%;
+    float: left;
+}
+#asociadoMes .iconsAsociado .iconA{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 0 15px;
+    background: url(../img/mejorPrecio.png) no-repeat center;
+    background-size: contain;
+}
+#asociadoMes .infoWrap{
+    text-align: justify;
+    width: 85%;
+    float: right;
+}
+#asociadoMes .contact p{
+    padding: 0;
+}
+/*FOOTER===============================================*/
+footer{
+    background: #000;
+    text-align: center;
+    color: #fff;
+
+    padding: 18px 0px;
+}
+footer .footer_logo{
+    background: url(../img/LogoAliaFooter.png) no-repeat center;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+footer .navigation{
+    margin-bottom: 10px;
+}
+footer .navigation ul li::before{
+    content:"·";
+    margin:0 4px;
+}
+footer .navigation ul li:nth-child(1)::before{
+    display:none;
+}
+footer .contacto ul li{
+
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+footer .icon-facebook-official:before {color:#fff;} /* '' */
+footer .icon-youtube:before { color:#fff;} /* '' */
+footer .icon-twitter:before {color:#fff; } /* '' */
+
+footer .contacto ul li a{
+    color: #000;
+    font-size:  24px;
+}
+
+footer a{
+       font-size: 12px;
+ color:#fff;
+}
+footer p{
+    margin-top: 15px;
+     font-size: 12px;
+}
+
+
+/* -- Estilos Jose --*/
+/*-- Busqueda en enlaces de navegacion --*/
+main #resultados{
+    margin:0 auto;
+    width:100%;
+    max-width:960px;
+    padding:40px 0;
+}
+main #resultados .encontrados{
+    text-align:center;
+    margin-bottom:40px;
+}
+main #resultados table{
+    width:100%;
+}
+#resultados table tr td{
+    cursor:pointer;
+}
+main #resultados table th{
+    background: #FFCC01;
+    padding:5px 0;
+    text-transform: uppercase;
+}
+main #resultados table td{
+    text-align:center;
+    padding:5px 0;
+}
+main #resultados table tr:nth-child(odd){
+    background-color:#ddd;
+}
+main #resultados table td .wrap{
+    height: 50px;
+    width: 60px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main #resultados table td .wrap.logo{
+    background-color: #FFCC01;
+    background-size: auto 67%;
+}
+
+main #resultados table tr .fa-circle.disponible{
+    color:green;
+}
+main #resultados table tr .fa-circle.reservado{
+    color:orange;
+}
+main #resultados table tr .fa-circle.vendido{
+    color:red;
+}
+/* Ficha */
+main #ficha{
+    width:100%;
+    max-width:960px;
+    margin:0 auto;
+    min-height: 630px;
+    padding:30px 0;
+    box-sizing: content-box;
+}
+main .lightbox{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,.8);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:640px auto;
+    z-index:100000;
+}
+main .lightbox .navegacion{
+    position:absolute;
+    top:45%;
+    left:0;
+    right:0;
+    width:100%;
+    max-width:725;
+    margin:0 auto;
+}
+main .lightbox .cerrar{
+    font-size: 35pt;
+    float: right;
+}
+main .lightbox .navegacion a{
+    font-size:25pt;
+    width: 30px;
+}
+main .lightbox .navegacion .izquierda{
+    float:left;
+}
+main .lightbox .navegacion .derecha{
+    float:right;
+text-align: right;
+}
+main #ficha .derecha,
+main #ficha .izquierda{
+    display:inline-block;
+}
+main #ficha > .derecha{
+    width:40%;
+}
+main #ficha .izquierda{
+    width:55%;
+}
+main #ficha .izquierda .empresa{
+    width:100%;
+    padding-bottom:10px;
+}
+main #ficha .izquierda .empresa > *{
+    display:inline-block;
+    font-size:27px;
+}
+main #ficha .izquierda .empresa .logo{
+    height:50px;
+    float:left;
+}
+main #ficha .izquierda .empresa .nombre{
+    text-align: center;
+    margin-left: 20px;
+}
+main #ficha .izquierda .empresa .nombre,
+main #ficha .izquierda .empresa .telefono{
+    padding: 10px 0 9px;
+}
+
+main #ficha .izquierda .empresa .telefono{
+    text-align: right;
+    float:right;
+}
+
+/*-- Colores Empresa --*/
+main #ficha .izquierda .empresa.NM{
+    border-bottom:3px solid #d81209;
+}
+main #ficha .izquierda .empresa.NM .telefono{
+    color:#d81209;
+}
+
+main #ficha .izquierda .empresa.SH{
+    border-bottom:3px solid #b5e51d;
+}
+main #ficha .izquierda .empresa.SH .telefono{
+    color:#b5e51d;
+}
+main #ficha .izquierda .empresa.GV{
+    border-bottom: 3px solid #7D121D;
+}
+main #ficha .izquierda .empresa.GV .telefono{
+    color:#7D121D;
+}
+main #ficha .izquierda .empresa.SV{
+    border-bottom: 3px solid #00388c;
+}
+main #ficha .izquierda .empresa.SV .telefono{
+    color:#00388c;
+}
+main #ficha .izquierda .empresa.IL{
+    border-bottom:3px solid #f76512;
+}
+main #ficha .izquierda .empresa.IL .telefono{
+    color:#f76512;
+}
+main #ficha .izquierda .empresa.GL{
+    border-bottom: 3px solid #bb0000;
+}
+main #ficha .izquierda .empresa.GL .telefono{
+    color:#bb0000;
+}
+/*-- Fin Colores Empresa -- */
+
+main #ficha .izquierda .datos .descripcion{
+    text-align: justify;
+}
+main #ficha .izquierda .datos p{
+    margin:20px 0;
+}
+main #ficha .izquierda .datos .tipo-precio{
+    font-size:30px;
+}
+main #ficha .izquierda .datos .zona-ref,
+main #ficha .izquierda .datos .disponibilidad,
+main #ficha .izquierda .datos .texto-reclamo{
+    font-size:21px;
+}
+main #ficha .izquierda .datos .zona-ref .derecha,
+main #ficha .izquierda .datos .disponibilidad,
+main #ficha .izquierda .datos .texto-reclamo{
+    font-weight:bold;
+}
+main #ficha .izquierda .datos .texto-reclamo{
+    background-color:#FFCC01;
+    text-align: center;
+    padding: 8px 0;
+}
+main #ficha .izquierda .datos .titulo{
+    font-weight:bold;
+    font-size:15px;
+}
+main #ficha .izquierda .datos .descripcion{
+    font-size:14px;
+    text-transform: lowercase;
+}
+main #ficha .izquierda .datos .derecha{
+    float:right;
+}
+main #ficha .izquierda .detalles .dato{
+    display:inline-block;
+    width:50%;
+    margin:2px 0;
+    font-size:14px;
+}
+
+main #ficha .izquierda .detalles .dato:nth-child(even){
+    float:right;
+}
+main #ficha > .derecha{
+    float:right;
+    text-align: right;
+}
+main #ficha .derecha .foto{
+    width:100%;
+    height: 289px;
+    background-size:cover;
+}
+main #ficha .derecha .foto a{
+    display:inline-block;
+    width:100%;
+    height:100%;
+}
+main #ficha .derecha .miniaturas{
+    list-style:none;
+    text-align:center;
+    margin-top:30px;
+}
+main #ficha .miniaturas li{
+    display:inline-block;
+}
+main #ficha .miniaturas li a{
+    display:inline-block;
+    width: 73px;
+    height: 73px;
+    background-size: cover;
+}
+main #ficha .derecha .texto-vinculante{
+    text-align: justify;
+    font-weight:bold;
+    margin-top:30px;
+    font-size:14px;
+}

@@ -1,0 +1,11 @@
+<tables>
+    <table name="tareas">
+        <column name="id" type="bigint" sign="false" null="false" default="0"/>
+        <column name="id_demanda" type="bigint" sign="false" null="false" default="0"/>
+        <column name="concepto" type="varchar" sign="false" null="false" default="0"/>
+        <column name="descripcion" type="varchar" sign="false" null="true" default="0"/>
+        <column name="fecha" type="datetime" sign="false" null="false" default="0"/>
+        <column name="completada" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="fecha_completada" type="date" sign="false" null="true" default="0"/>
+    </table>
+</tables>

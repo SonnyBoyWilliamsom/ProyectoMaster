@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selects>
+    <select name="agente_inserta" controller="agentes" />
+    <select name="agente_captador" controller="agentes" />
+</selects>

@@ -1,0 +1,31 @@
+
+<div class="loginLight" style="display:none;">
+<div class='formWrap'>
+	<form id="loginForm" action='../login.php' method="post">
+	<div class="messages">
+		<p class='warnPass' style="display:none;">Email and password do not match, please try again.</p>
+		<p class='warnData' style="display:none;">Something went wrong, plasase try again later.</p>
+	</div>
+	<div class="field">
+		<label for="emailUser">Email</label>
+		<input type="email" name="email" id="emailUser" >
+	</div>
+		<div class="field">
+		<label for="passwordUser">Pass</label>
+		<input type="password" name="password" id="passwordUser" >
+	</div>
+	<div class="field">
+		<label for="remember">Remember me</label>
+		<input type="checkbox" name="remember" id="remember">
+	</div>
+	<input type="hidden" name="token" value="<?php echo Token::generate() ?>"> 
+	<input type="submit" name="login" value="LOGIN" >
+
+	<p> <a href="./register.php" title="SignIn">Sign in</a></p>
+
+
+
+</form>
+</div>
+</div>
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forms>
+    <form name="Nuevo">
+        <field key_bd="c_captacion" tipo="text" obligatorio="0" label_es="Código de captación" longitud="" />
+        <field key_bd="provincia" tipo="text" obligatorio="0" label_es="Provincia" longitud="" />
+        <field key_bd="municipio" tipo="text" obligatorio="0" label_es="Municipio" longitud="" />
+        <field key_bd="zona" tipo="text" obligatorio="0" label_es="Zona" longitud="" />
+        <field key_bd="sigla_zona" tipo="text" obligatorio="0" label_es="Sigla de la Zona" longitud="" />
+        <field key_bd="precio" tipo="text" obligatorio="0" label_es="Precio" longitud="" />
+        <field key_bd="f_entrada" tipo="date" obligatorio="0" label_es="Fecha de entrada" longitud="" />
+        <field key_bd="precio_ultima" tipo="text" obligatorio="0" label_es="Precio última vez visto" longitud="" />
+        <field key_bd="direccion" tipo="text" obligatorio="0" label_es="Dirección Inmueble" longitud="" />
+        <field key_bd="n_dormitorios" tipo="text" obligatorio="0" label_es="Nº Dormitorios" longitud="" />
+        <field key_bd="caract_pcples" tipo="text" obligatorio="0" label_es="Características principales" longitud="" />
+        <field key_bd="nombre_anunciante" tipo="text" obligatorio="0" label_es="Nombre del anunciante" longitud="" />
+        <field key_bd="tlf" tipo="text" obligatorio="0" label_es="Teléfono" longitud="" />
+        <field key_bd="tlf_2" tipo="text" obligatorio="0" label_es="Teléfono 2" longitud="" />
+        <field key_bd="agente_inserta" id-options="agente_inserta" tipo="select" obligatorio="0" label_es="Insertado por" longitud="" />
+        <field key_bd="agente_captador" id-options="agente_captador" tipo="select" obligatorio="0" label_es="Agente captador" longitud="" />
+        <field key_bd="f_p_llamada" tipo="date" obligatorio="0" label_es="Fecha de la primera llamada" longitud="" />
+        <field key_bd="f_ultimo_contacto" tipo="date" obligatorio="0" label_es="Fecha último contacto" longitud="" />
+        <field key_bd="captacion_proceso" tipo="checkbox" obligatorio="0" label_es="Captación en proceso" longitud="" />
+        <field key_bd="url" tipo="text" obligatorio="0" label_es="Enlace de internet" longitud="" />
+        <field key_bd="observaciones" tipo="textarea" obligatorio="0" label_es="Observaciones adicionales" longitud="" />
+    </form>
+    <form name="Modificar">
+        <field key_bd="id" tipo="hidden" obligatorio="0" label_es="Referencia" longitud="1" data-validation="text"/>
+        <field key_bd="c_captacion" tipo="text" obligatorio="0" label_es="Código de captación" longitud="" />
+        <field key_bd="provincia" tipo="text" obligatorio="0" label_es="Provincia" longitud="" />
+        <field key_bd="municipio" tipo="text" obligatorio="0" label_es="Municipio" longitud="" />
+        <field key_bd="zona" tipo="text" obligatorio="0" label_es="Zona" longitud="" />
+        <field key_bd="sigla_zona" tipo="text" obligatorio="0" label_es="Sigla de la Zona" longitud="" />
+        <field key_bd="precio" tipo="text" obligatorio="0" label_es="Precio" longitud="" />
+        <field key_bd="f_entrada" tipo="date" obligatorio="0" label_es="Fecha de entrada" longitud="" />
+        <field key_bd="precio_ultima" tipo="text" obligatorio="0" label_es="Precio última vez visto" longitud="" />
+        <field key_bd="direccion" tipo="text" obligatorio="0" label_es="Dirección Inmueble" longitud="" />
+        <field key_bd="n_dormitorios" tipo="text" obligatorio="0" label_es="Nº Dormitorios" longitud="" />
+        <field key_bd="caract_pcples" tipo="text" obligatorio="0" label_es="Características principales" longitud="" />
+        <field key_bd="nombre_anunciante" tipo="text" obligatorio="0" label_es="Nombre del anunciante" longitud="" />
+        <field key_bd="tlf" tipo="text" obligatorio="0" label_es="Teléfono" longitud="" />
+        <field key_bd="tlf_2" tipo="text" obligatorio="0" label_es="Teléfono 2" longitud="" />
+        <field key_bd="agente_inserta" id-options="agente_inserta" tipo="select" obligatorio="0" label_es="Insertado por" longitud="" />
+        <field key_bd="agente_captador" id-options="agente_captador" tipo="select" obligatorio="0" label_es="Agente captador" longitud="" />
+        <field key_bd="f_p_llamada" tipo="date" obligatorio="0" label_es="Fecha de la primera llamada" longitud="" />
+        <field key_bd="f_ultimo_contacto" tipo="date" obligatorio="0" label_es="Fecha último contacto" longitud="" />
+        <field key_bd="captacion_proceso" tipo="checkbox" obligatorio="0" label_es="Captación en proceso" longitud="" />
+        <field key_bd="url" tipo="text" obligatorio="0" label_es="Enlace de internet" longitud="" />
+        <field key_bd="observaciones" tipo="textarea" obligatorio="0" label_es="Observaciones adicionales" longitud="" />
+    </form>
+</forms>

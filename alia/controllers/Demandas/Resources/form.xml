@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forms>
+    <form name="Nuevo" subindex="1">
+        <field key_bd="id" tipo="oculto" obligatorio="1" label_es="Código" longitud="0" />
+        <field key_bd="id_cliente" id-options="id_cliente" tipo="select" obligatorio="1" label_es="Cliente" longitud="0" />
+        <field key_bd="tipo" id-options="tipo" tipo="select" events-id="2" obligatorio="1" label_es="Tipo de Demanda" longitud="0" />
+        <field key_bd="presupuesto" id-options="presupuesto" tipo="select" obligatorio="1" label_es="Presupuesto Máximo" longitud="10" />
+        <field key_bd="c_provincia" id-options="c_provincia" tipo="select" obligatorio="1" label_es="Provincia" longitud="20" />
+        <field key_bd="c_poblacion" id-options="c_poblacion" tipo="select" obligatorio="1" label_es="Poblacion" longitud="20" />
+        <field key_bd="c_zona" id-options="c_zona" tipo="select" obligatorio="1" label_es="Zona" longitud="20" />
+        <field key_bd="c_tipo" id-options="c_tipo" tipo="select" obligatorio="1" label_es="Tipo" longitud="20" />
+        <field key_bd="piscina" id-options="piscina" tipo="select" obligatorio="0" label_es="Piscina" longitud="6" />
+        <field key_bd="trastero" id-options="trastero" tipo="select" obligatorio="0" label_es="Trastero" longitud="6" />
+        <field key_bd="garaje" id-options="garaje" tipo="select" obligatorio="0" label_es="Garaje" longitud="6" />
+        <field key_bd="ascensor" id-options="ascensor" tipo="select" obligatorio="0" label_es="Ascensor" longitud="6" />
+        <field key_bd="dormitorios" id-options="dormitorios" tipo="select" obligatorio="0" label_es="Dormitorios" longitud="5" />
+        <field key_bd="activa" tipo="checkbox" obligatorio="0" label_es="Activa" longitud="5" />
+    </form>
+    <form name="Modificar" subindex="5">
+        <field key_bd="id" tipo="hidden" obligatorio="1" label_es="Código" longitud="0" />
+        <field key_bd="id_cliente" id-options="id_cliente" tipo="select" obligatorio="1" label_es="Cliente" longitud="0" />
+        <field key_bd="tipo" id-options="tipo" tipo="select" events-id="2" obligatorio="1" label_es="Tipo de Demanda" longitud="0" />
+        <field key_bd="presupuesto" id-options="presupuesto" tipo="select" obligatorio="1" label_es="Presupuesto Máximo" longitud="10" />
+        <field key_bd="c_provincia" id-options="c_provincia" tipo="select" obligatorio="1" label_es="Provincia" longitud="20" />
+        <field key_bd="c_poblacion" id-options="c_poblacion" tipo="select" obligatorio="1" label_es="Poblacion" longitud="20" />
+        <field key_bd="c_zona" id-options="c_zona" tipo="select" obligatorio="1" label_es="Zona" longitud="20" />
+        <field key_bd="c_tipo" id-options="c_tipo" tipo="select" obligatorio="1" label_es="Tipo" longitud="20" />
+        <field key_bd="piscina" id-options="piscina" tipo="select" obligatorio="0" label_es="Piscina" longitud="6" />
+        <field key_bd="trastero" id-options="trastero" tipo="select" obligatorio="0" label_es="Trastero" longitud="6" />
+        <field key_bd="garaje" id-options="garaje" tipo="select" obligatorio="0" label_es="Garaje" longitud="6" />
+        <field key_bd="ascensor" id-options="ascensor" tipo="select" obligatorio="0" label_es="Ascensor" longitud="6" />
+        <field key_bd="dormitorios" id-options="dormitorios" tipo="select" obligatorio="0" label_es="Dormitorios" longitud="5" />
+        <field key_bd="activa" tipo="checkbox" obligatorio="0" label_es="Activa" longitud="5" />
+    </form>
+    <form name="Buscador_Avanzado" subindex="9" events-id="1">
+        <field key_bd="tipo" id-options="tipo" tipo="select" obligatorio="1" label_es="Tipo de Demanda" longitud="0" />
+        <field key_bd="presupuesto" id-options="presupuesto" tipo="select" obligatorio="1" label_es="Presupuesto Máximo" longitud="10" />
+        <field key_bd="c_provincia" id-options="c_provincia" tipo="select" obligatorio="1" label_es="Provincia" longitud="20" />
+        <field key_bd="c_poblacion" id-options="c_poblacion" tipo="select" obligatorio="1" label_es="Poblacion" longitud="20" />
+        <field key_bd="c_zona" id-options="c_zona" tipo="select" obligatorio="1" label_es="Zona" longitud="20" />
+        <field key_bd="c_tipo" id-options="c_tipo" tipo="select" obligatorio="1" label_es="Tipo" longitud="20" />
+        <field key_bd="piscina" id-options="piscina" tipo="select" obligatorio="0" label_es="Piscina" longitud="6" />
+        <field key_bd="trastero" id-options="trastero" tipo="select" obligatorio="0" label_es="Trastero" longitud="6" />
+        <field key_bd="garaje" id-options="garaje" tipo="select" obligatorio="0" label_es="Garaje" longitud="6" />
+        <field key_bd="ascensor" id-options="ascensor" tipo="select" obligatorio="0" label_es="Ascensor" longitud="6" />
+        <field key_bd="dormitorios" id-options="dormitorios" tipo="select" obligatorio="0" label_es="Dormitorios" longitud="5" />
+        <field key_bd="anno" id-options="anno" tipo="select" obligatorio="0" label_es="Año" longitud="5" />
+        <field key_bd="mes" id-options="mes" tipo="select" obligatorio="0" label_es="Mes" longitud="5" />
+        <field key_bd="activa" tipo="checkbox" obligatorio="0" label_es="Sólo activas" longitud="5" />
+    </form>
+</forms>

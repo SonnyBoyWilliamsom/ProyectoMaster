@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selects>
+    <select name="permisos">
+        <option value="0">Gerente</option>
+        <option value="1">Administrador</option>
+        <option value="2">Agente</option>
+        <option value="3">Prácticas</option>
+    </select>
+</selects>

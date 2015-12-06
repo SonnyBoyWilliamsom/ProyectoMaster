@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selects>
+    <select name="empresa" controller="empresas" />
+    <select name="permisos">
+        <option value="0">Premium</option>
+        <option value="1">Superusuario</option>
+    </select>
+</selects>

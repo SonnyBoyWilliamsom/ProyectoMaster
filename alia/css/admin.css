@@ -1,0 +1,503 @@
+@import url(https://fonts.googleapis.com/css?family=Satisfy|Open+Sans+Condensed:300|Ubuntu+Condensed);
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../../fonts/fontawesome-webfont.eot');
+    src: url('../../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/fontawesome-webfont.woff') format('woff'),
+        url('../../fonts/fontawesome-webfont.ttf') format('truetype'),
+        url('../../fonts/fontawesome-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+
+}
+html,body{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    margin:0;
+    padding:0;
+    width:100%;
+    min-height:100%;
+    min-width:1200px;
+    background-color: #ececec;
+}
+#wrapper {
+    width: 100%;
+    min-height: 100%;
+    background-color: #ececec;
+}
+#wrapper header{
+    width:100%;
+    background-color:white;
+}
+#wrapper header #header{
+    width: 1200px;
+    margin: 0 auto;
+    height: 70px;
+}
+#wrapper header #header h1{
+    margin: 0;
+    display: inline-block;
+    height: 70px;
+    float: left;
+    width: 250px;
+}
+#wrapper header #header h1 a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/LogoAlia.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#wrapper header #header nav {
+    height: 70px;
+    margin-left: 190px;
+    font-size: 15pt;
+    text-align: center;
+}
+#wrapper header #header nav ul li a{
+    text-decoration: none;
+    color: black;
+    margin: 29px 26px 0;
+    display: inline-block;
+}
+#wrapper header #header nav > ul > li:not(.desplegable) > a:hover,
+#wrapper header #header nav ul li a.active{
+    font-weight:bold;
+    border-bottom:2px solid black;
+}
+#wrapper header #header nav ul li a.primero{
+    margin-left:0;
+}
+#wrapper header #header nav ul li a.ultimo{
+    margin-right:0;
+}
+#wrapper #exportar,
+#wrapper #form-importacion,
+#wrapper #buscar-nuevo{
+    width:1200px;
+    margin:0 auto;
+}
+#wrapper table{
+    width:1200px;
+    margin:0 auto;
+    padding-bottom:50px;
+}
+#wrapper table tr td{
+    padding:0 3px;
+    text-align:center;
+}
+#wrapper table tr th{
+    padding:4px 3px;
+    border-left: 2px solid white;
+}
+#wrapper table tr th:first-child{
+    border-left: 0px solid white;
+}
+.oculto{
+    display:none !important;
+}
+.sombra{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0;
+    height:0;
+    z-index:1;
+    background-color:rgba(0,0,0,.85);
+}
+.plegado{
+    position:absolute;
+    overflow:hidden;
+    height:0;
+    width:0;
+    background-color:white;
+    z-index:2;
+    border-radius: 15px;
+}
+
+table tr:nth-child(even) {
+    background-color: #d0d0d0;
+    border:0;
+}
+table tr th{
+    background-color: #FFCC01;
+    color:black;
+    border:0;
+}
+table tr th a{
+    color:black;
+    text-decoration:none;
+}
+table tr td{
+    border:0;
+    padding:0;
+    margin:0;
+}
+table tr td ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+#wrapper header nav ul{
+    list-style:none;
+}
+#wrapper header nav ul li{
+    display:inline-block;
+}
+form{
+    position:relative;
+}
+form .titulo-pagina{
+    color: #FFCC01;
+    text-transform: uppercase;
+    font-size: 23pt;
+    font-family: 'futura';
+    font-weight: bold;
+    margin-left: 10px;
+}
+form.template03 .linea{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    padding: 0px 0px 0 20px;
+    margin-left: -10px;
+}
+#form_Inmuebles_Nuevo .linea:nth-child(even),
+#form_Inmuebles_Modificar .linea:nth-child(even){
+    background-color:#d0d0d0;
+}
+form .linea,
+form .linea .lado{
+    display:inline-block;
+}
+form.template01 .linea{
+    display:block;
+}
+input[type=submit]{
+    display:block;
+}
+.template01 input:not([type=checkbox]):not([type=submit]):not([type=reset]),
+.template01 select,
+.template01 textarea{
+    width:400px;
+}
+.template01 label{
+    display:block;
+}
+form.dos-columnas .linea .lado{
+    width:49%;
+}
+.dos-columnas .linea .lado input,
+.dos-columnas .linea .lado select,
+.dos-columnas .linea .lado textarea{
+    width:410px;
+    display:block;
+}
+.template03 .linea .lado label{
+    font-size: 14pt;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+form.template03 .linea{
+    height:86px;
+    margin:0 -10px;
+    padding:0 10px;
+}
+form.template03 .linea .lado{
+    /*min-width:25%;*/
+    width:275px;
+    float:left;
+    padding:10px 0;
+    margin:0 10px;
+}
+form.template03 .campos{
+    min-height:810px;
+}
+form.template03 .direccion{
+  position: relative;
+  height: 34px;
+}
+form.template03 .direccion .anterior,
+form.template03 .direccion .siguiente{
+    font-family: 'FontAwesome';
+    text-decoration: none;
+    color: black;
+    font-size: 20pt;
+}
+form.template03 .direccion .anterior span,
+form.template03 .direccion .siguiente span{
+    padding:0 5px;
+}
+#form_Inmuebles_Nuevo input[type=submit],
+#form_Inmuebles_Modificar input[type=submit]{
+    width: 150px;
+    margin: 10px auto 0;
+    color: black;
+    background-color: #FFCC01;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 15px;
+    padding: 5px 0;
+    cursor:pointer;
+    font-size: 11pt;
+}
+form.template03 .direccion .anterior{
+    float:left;
+}
+form.template03 .direccion .siguiente{
+    float:right;
+}
+.template03 .linea .lado input,
+.template03 .linea .lado select{
+    width:275px;
+    display:block;
+}
+.template03 .linea .lado textarea{
+      margin-right: 10px;
+    display:block;
+    width: 590px;
+    height: 65px;
+    resize: none;
+}
+#form_inmuebles_Modificar,
+#form_inmuebles_Nuevo{
+    width:1200px;
+}
+.template01{
+    width:430px;
+}
+.fotos{
+    width: 1300px;
+}
+.fotos .fotos-inmueble{
+    display:inline-block;
+    padding: 10px;
+    width:300px;
+}
+.fotos .fotos-inmueble.plano{
+    float:right;
+    margin-right:6px;
+}
+.fotos .fotos-inmueble .cuadro{
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+    border: 1px solid black;
+    text-align:center;
+}
+.fotos .fotos-inmueble .cuadro img{
+    height:100%;
+    display:block;
+    margin:0 auto;
+}
+.fotos .fotos-inmueble .subir{
+    margin: 5px 0;
+}
+.fotos .fotos-inmueble .configuracion p{
+    display:inline-block;
+    margin: 0 0 5px 0;
+}
+.fotos .fotos-inmueble .izquierda{
+    float:left;
+}
+.fotos .fotos-inmueble .derecha{
+    float:right;
+}
+.fotos .fotos-inmueble .configuracion textarea{
+    width:100%;
+    height:100px;
+}
+.logo-login{
+    display:block;
+    margin:0 auto;
+    padding:10px 0;
+    width:430px;
+}
+#form_Agentes_Login{
+    margin:0 auto;
+    padding:15px;
+    background-color: #FFCC01;
+    margin-top:10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+#form_Agentes_Login label{
+    color:black;
+    font-size:16pt;
+}
+#form_Agentes_Login input{
+    width:100%;
+    padding: 3px 10px;
+    border: 0;
+    font-size:11pt;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+#form_Agentes_Login input[type=submit]{
+    width:150px;
+    margin:10px auto 0;
+    color: black;
+    background-color: #FFCC01;
+    text-transform: uppercase;
+    border-radius: 0;
+    border: 1px solid black;
+}
+#form_Agentes_Login input[type=submit]:hover{
+    cursor:pointer;
+}
+.fa-times{
+    position: absolute;
+    top: -20px;
+    right: -17px;
+    font-family: FontAwesome;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 5px 7px;
+    font-size: 20pt;
+}
+.fa-times:hover{
+    color:black;
+}
+#form_Inmuebles_Nuevo .paginado,
+#form_Inmuebles_Modificar .paginado{
+    display:none;
+}
+#form_Inmuebles_Nuevo .paginado.activo,
+#form_Inmuebles_Modificar .paginado.activo{
+    display:block;
+}
+/* Datepickers */
+#ui-datepicker-div{
+    /*background-color:white;
+    width: 275px;*/
+    background-color: white;
+    width: 271px;
+    /*border: 2px solid black;*/
+}
+.ui-datepicker-calendar{
+    width:100%;
+}
+.ui-datepicker-calendar td{
+    text-align:center;
+    cursor:pointer;
+}
+.ui-datepicker-calendar td a{
+    text-decoration:none;
+    color:black;
+}
+.ui-datepicker-current-day{
+    background-color:#FFCC01;
+    color:black;
+}
+.ui-datepicker-today{
+    background-color:rgba(255, 204, 1, 0.48);
+}
+.ui-datepicker-unselectable.ui-state-disabled:not(.ui-datepicker-other-month){
+    background-color:gray;
+}
+.ui-datepicker-title{
+    font-size: 14pt;
+    text-align: center;
+    width: 135px;
+    margin: 0 33px;
+    display: inline-block;
+}
+.ui-datepicker-next.ui-corner-all{
+    float: right;
+    margin-top: 2px;
+}
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all a{
+    font-weight:bold;
+    cursor:pointer;
+}
+/* ComboBox  */
+.ui-autocomplete.ui-menu.ui-widget.ui-widget-content.ui-corner-all{
+    background-color: white;
+    max-width: 398px;
+    border: 1px solid black;
+    list-style: none;
+    padding-left: 0;
+    max-height: 325px;
+    overflow: auto;
+}
+.ui-autocomplete.ui-menu.ui-widget.ui-widget-content.ui-corner-all li{
+    cursor:pointer;
+}
+.ui-autocomplete.ui-menu.ui-widget.ui-widget-content.ui-corner-all li:hover{
+    background-color:#888;
+}
+.ui-helper-hidden-accessible{
+    display:none;
+}
+a#nuevo{
+    text-align: center;
+    padding:5px 3px;
+    display: block;
+    font-size: 14pt;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px dashed #FFCC01;
+    margin-left: -3px;
+}
+#form_Agentes_Login{
+    background-image: url('../img/LogoAliaNegro.png');
+    background-repeat: no-repeat;
+    background-position: center 15px;
+    padding-top: 130px;
+    background-size: 110px auto;
+}
+.desplegable{
+    position:relative;
+}
+.desplegable:hover > ul{
+    height:auto;
+}
+.desplegable > ul{
+    overflow:hidden;
+    height:0;
+    width:100%;
+    position:absolute;
+    left:0;
+    background-color:rgba(255,255,255,.8);
+    padding:0;
+}
+.desplegable > ul li a{
+    text-align:left;
+    padding:10px;
+    margin:0 !important;
+    display:block;
+    width:100%;
+}
+.desplegable > ul li{
+    width:100%;
+    padding-left: 20px;
+}
+.desplegable > ul li:hover{
+    background-color:#FFCC01;
+}
+.desplegable > ul li:hover a{
+    color:black !important;
+}
+#form_Inmuebles_Fotos input.submit{
+    background-color:red;
+    color:white;
+    margin:0 auto;
+    width:360px;
+    padding:28px 0;
+    font-size:22pt;
+    text-transform: uppercase;
+    font-weight: bold;
+}

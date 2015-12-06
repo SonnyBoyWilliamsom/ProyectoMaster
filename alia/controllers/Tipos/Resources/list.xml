@@ -1,0 +1,11 @@
+<lists>
+    <list name="Mostrar" id="id">
+        <cell label_es="Nombre"><field key_bd="nombre" /></cell>
+        <cell label_es="Activa"><field key_bd="activa" /></cell>
+        <cell label_es="Acción">
+            <field key_bd="" content="Modificar" events-id="8" />
+            <field key_bd="" content="Eliminar" events-id="9" />
+        </cell>
+        <cell label_es="Eliminar Seleccionados" events-id="6"><field key_bd="" delete-selected="true" /></cell>
+    </list>
+</lists>

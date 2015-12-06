@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forms>
+    <form name="Nuevo" subindex="0">
+        <field key_bd="id" tipo="oculto" obligatorio="0" label_es="Código" longitud="0" />
+        <field key_bd="nombre" tipo="text" obligatorio="1" label_es="Nombre" longitud="30" />
+        <field key_bd="apellidos" tipo="text" obligatorio="1" label_es="Apellidos" longitud="100" />
+        <field key_bd="mail" tipo="text" obligatorio="1" label_es="Mail" longitud="100" />
+        <field key_bd="mail_1" tipo="text" obligatorio="0" label_es="Mail 2" longitud="100" />
+        <field key_bd="telefono" tipo="text" obligatorio="1" label_es="Teléfono" longitud="15" />
+        <field key_bd="telefono_1" tipo="text" obligatorio="0" label_es="Teléfono 2" longitud="15" />
+        <field key_bd="c_zona" tipo="select" id-options="zona" obligatorio="0" label_es="Zona de Interés" longitud="15" />
+        <field key_bd="vendedor" tipo="checkbox" obligatorio="1" label_es="Vendedor" longitud="1" />
+        <field key_bd="comprador" tipo="checkbox" obligatorio="1" label_es="Comprador" longitud="1" />
+        <field key_bd="arrendatario" tipo="checkbox" obligatorio="1" label_es="Arrendador" longitud="1" />
+        <field key_bd="inquilino" tipo="checkbox" obligatorio="1" label_es="Inquilino" longitud="1" />
+        <field key_bd="anotaciones" tipo="textarea" obligatorio="0" label_es="Anotaciones" longitud="15" />
+        <field key_bd="id_agente" id-options="id_agente" tipo="select" obligatorio="0" label_es="Agente" longitud="15" />
+    </form>
+    <form name="Insercion_de_inmuebles" subindex="0">
+        <field key_bd="nombre" tipo="text" obligatorio="1" label_es="Nombre" longitud="30" />
+        <field key_bd="apellidos" tipo="text" obligatorio="1" label_es="Apellidos" longitud="100" />
+        <field key_bd="mail" tipo="text" obligatorio="1" label_es="Mail" longitud="100" />
+        <field key_bd="mail_1" tipo="text" obligatorio="0" label_es="Mail 2" longitud="100" />
+        <field key_bd="telefono" tipo="text" obligatorio="1" label_es="Teléfono" longitud="15" />
+        <field key_bd="telefono_1" tipo="text" obligatorio="0" label_es="Teléfono 2" longitud="15" />
+        <field key_bd="c_zona" tipo="select" id-options="zona" obligatorio="0" label_es="Zona de Interés" longitud="15" />
+        <field key_bd="vendedor" tipo="checkbox" obligatorio="1" label_es="Vendedor" longitud="1" />
+        <field key_bd="comprador" tipo="checkbox" obligatorio="1" label_es="Comprador" longitud="1" />
+        <field key_bd="arrendatario" tipo="checkbox" obligatorio="1" label_es="Arrendador" longitud="1" />
+        <field key_bd="inquilino" tipo="checkbox" obligatorio="1" label_es="Inquilino" longitud="1" />
+        <field key_bd="anotaciones" tipo="textarea" obligatorio="0" label_es="Anotaciones" longitud="15" />
+        <field key_bd="id_agente" id-options="id_agente" tipo="select" obligatorio="0" label_es="Agente" longitud="15" />
+    </form>
+    <form name="Modificar" subindex="5">
+        <field key_bd="id" tipo="hidden" obligatorio="0" label_es="Código" longitud="0" />
+        <field key_bd="nombre" tipo="text" obligatorio="1" label_es="Nombre" longitud="30" />
+        <field key_bd="apellidos" tipo="text" obligatorio="1" label_es="Apellidos" longitud="100" />
+        <field key_bd="mail" tipo="text" obligatorio="1" label_es="Mail" longitud="100" />
+        <field key_bd="mail_1" tipo="text" obligatorio="0" label_es="Mail 2" longitud="100" />
+        <field key_bd="telefono" tipo="text" obligatorio="1" label_es="Teléfono" longitud="15" />
+        <field key_bd="telefono_1" tipo="text" obligatorio="0" label_es="Teléfono 2" longitud="15" />
+        <field key_bd="c_zona" tipo="select" id-options="zona" obligatorio="0" label_es="Zona de Interés" longitud="15" />
+        <field key_bd="vendedor" tipo="checkbox" obligatorio="1" label_es="Vendedor" longitud="1" />
+        <field key_bd="comprador" tipo="checkbox" obligatorio="1" label_es="Comprador" longitud="1" />
+        <field key_bd="arrendatario" tipo="checkbox" obligatorio="1" label_es="Arrendador" longitud="1" />
+        <field key_bd="inquilino" tipo="checkbox" obligatorio="1" label_es="Inquilino" longitud="1" />
+        <field key_bd="anotaciones" tipo="textarea" obligatorio="0" label_es="Anotaciones" longitud="15" />
+        <field key_bd="id_agente" id-options="id_agente" tipo="select" obligatorio="0" label_es="Agente" longitud="15" />
+    </form>
+    <form name="Buscador_Avanzado" subindex="7" events-id="1">
+        <field key_bd="nombre" tipo="text" obligatorio="1" label_es="Nombre" longitud="30" />
+        <field key_bd="apellidos" tipo="text" obligatorio="1" label_es="Apellidos" longitud="100" />
+        <field key_bd="mail" tipo="text" obligatorio="1" label_es="Mail" longitud="100" />
+        <field key_bd="telefono" tipo="text" obligatorio="1" label_es="Teléfono" longitud="15" />
+        <field key_bd="c_zona" tipo="select" id-options="zona" obligatorio="0" label_es="Zona de Interés" longitud="15" />
+        <field key_bd="vendedor" value="true" tipo="checkbox" obligatorio="1" label_es="Vendedor" longitud="1" />
+        <field key_bd="comprador" value="true" tipo="checkbox" obligatorio="1" label_es="Comprador" longitud="1" />
+        <field key_bd="arrendatario" value="true" tipo="checkbox" obligatorio="1" label_es="Arrendador" longitud="1" />
+        <field key_bd="inquilino" value="true" tipo="checkbox" obligatorio="1" label_es="Inquilino" longitud="1" />
+        <field key_bd="id_agente" id-options="id_agente" tipo="select" obligatorio="0" label_es="Agente" longitud="15" />
+    </form>
+</forms>

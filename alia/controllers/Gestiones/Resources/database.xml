@@ -1,0 +1,6 @@
+<tables>
+    <table name="gestiones">
+        <column name="id" type="smallint" sign="false" null="false" default="0"/>
+        <column name="nombre" type="varchar" sign="false" null="true" default="0"/>
+    </table>
+</tables>

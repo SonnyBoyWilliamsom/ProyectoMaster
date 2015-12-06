@@ -1,0 +1,30 @@
+<label for="[key_bd]">[label]</label>
+<input type="hidden" name="[key_bd]" class="[key_bd]">
+<div id="slider-[key_bd]"></div>
+<script>
+    var pila[key_bd]=false;
+    $("#slider-[key_bd]").slider({
+        range:true,
+        values: [0,[max]],
+        min: [min],
+        max: [max],
+        step: [step],
+        change: function( event, ui ){
+            if(pila[key_bd]==false && ui.values[0]==ui.values[1]){
+                pila[key_bd]=true;
+                $("#slider-[key_bd]").slider( "values", 0, ui.values[1]-1 );
+                $("#slider-[key_bd]").parent().children(".[key_bd]").val((ui.values[1]-1)+"-"+ui.values[1]);
+            }
+            else{
+                pila[key_bd]=false;
+                $("#slider-[key_bd]").parent().children(".[key_bd]").val(ui.values[0]+"-"+ui.values[1]);
+            }
+        }
+    }).each(function() {
+        var vals = [max] - [min];
+        for (var i = 0; i <= vals; i+=[step]){
+            var el = $('<label>'+(i+[min])+'</label>').css('left',(i/vals*100)+'%');
+            $("#slider-[key_bd]").append(el);
+        }
+    });
+</script>

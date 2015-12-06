@@ -1,0 +1,19 @@
+<lists>
+    <list name="Mostrar" id="id">
+        <cell label_es="Código"><field key_bd="id" preprocessing="true" /></cell>
+        <cell label_es="Fecha de inserción"><field key_bd="fecha_creacion" preprocessing="true" /></cell>
+        <cell label_es="Cliente"><field key_bd="id_cliente" preprocessing="true" /></cell>
+        <cell label_es="Presupuesto Máximo"><field key_bd="presupuesto" preprocessing="true" /></cell>
+        <cell label_es="Dormitorios"><field key_bd="dormitorios" /></cell>
+        <cell label_es="Zona"><field key_bd="c_zona" preprocessing="true" /></cell>
+        <cell label_es="Inmueble"><field key_bd="c_tipo" preprocessing="true" /></cell>
+        <cell label_es="Tipo"><field key_bd="tipo" preprocessing="true" /></cell>
+        <cell label_es="Activa"><field key_bd="activa" preprocessing="true"/></cell>
+        <cell label_es="Tareas"><field key_bd="" content="Ver" href="[base]/admin/tareas-demanda/[id]" /></cell>
+        <cell label_es="Edición">
+            <field key_bd="" content="Modificar" events-id="8" />
+            <field key_bd="" content="Eliminar" events-id="9" />
+        </cell>
+        <cell label_es="Eliminar" events-id="6"><field key_bd="" delete-selected="true" /></cell>
+    </list>
+</lists>

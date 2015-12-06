@@ -1,0 +1,62 @@
+<lists>
+    <list name="Mostrar_Admin" id="c_inmuebles">
+        <cell label_es="Referencia"><field key_bd="referencia" /></cell>
+        <cell label_es="Zona"><field key_bd="zona" preprocessing="true"/></cell>
+        <cell label_es="Nombre Vía"><field key_bd="direccion_calle" /></cell>
+        <cell label_es="Nº de habitaciones"><field key_bd="n_habitaciones" /></cell>
+        <cell label_es="Precio de compra"><field key_bd="precio_compra" preprocessing="true"/></cell>
+        <cell label_es="Demandas Coincidentes"><field key_bd="" content="Comprobar" events-id="" /></cell>
+        <cell label_es="Fotos"><field key_bd="" content="Actualizar" events-id="7" /></cell>
+        <cell label_es="Ver Ficha"><field key_bd="" content="Ver Ficha" href="[base]/inmuebles/ficha/[referencia]" /></cell>
+        <cell label_es="Acción">
+            <field key_bd="" content="Modificar" events-id="8" />
+            <field key_bd="" content="Eliminar" events-id="9" />
+        </cell>
+        <cell label_es="Eliminar Seleccionados" events-id="6"><field key_bd="" delete-selected="true" /></cell>
+    </list>
+    <list name="Ficha" id="c_inmuebles" file="ficha-inmueble">
+        <cell label_es="habitaciones"><field key_bd="n_habitaciones" /></cell>
+        <cell label_es="M2 Constr."><field key_bd="m2_construidos" /></cell>
+        <cell label_es="M2 Útiles"><field key_bd="m2_utiles" /></cell>
+        <cell label_es="Garaje"><field key_bd="garaje_01" /></cell>
+        <cell label_es="Estado Cons."><field key_bd="estado_vivienda" /></cell>
+        <cell label_es="Trastero"><field key_bd="trastero_01"  /></cell>
+        <cell label_es="Ascensor"><field key_bd="ascensor_01" /></cell>
+        <cell label_es="Baños"><field key_bd="n_banos" /></cell>
+        <cell label_es="Altura"><field key_bd="direccion_piso"  /></cell>
+        <cell label_es="Terraza"><field key_bd="terraza_01" /></cell>
+        <cell label_es="Disponible"><field key_bd="reservado_01" /></cell>
+        <cell label_es="Jardín"><field key_bd="jardin_01" /></cell>
+        <cell label_es="Piscina"><field key_bd="piscina_01" /></cell>
+        <cell label_es="Amueblado"><field key_bd="amueblado_01" /></cell>
+        <cell label_es="Accesible"><field key_bd="accesible_01" /></cell>
+        <cell label_es="C. energética"><field key_bd="eficiencia_energetica_tipo"  /></cell>
+        <cell label_es="Calefacción"><field key_bd="calefaccion_01" /></cell>
+        <cell label_es="Aire Acond."><field key_bd="aire_acondicionado_01" /></cell>
+        <cell label_es="Aseos"><field key_bd="n_aseos" /></cell>
+        <cell label_es="VPO"><field key_bd="vpo_01" /></cell>
+    </list>
+    <list name="Pdf" id="c_inmuebles">
+        <cell label_es="Habitaciones"><field key_bd="n_habitaciones" /></cell>
+        <cell label_es="M2 Constr."><field key_bd="m2_construidos" /></cell>
+        <cell label_es="M2 Útiles"><field key_bd="m2_utiles" /></cell>
+        <cell label_es="Garaje"><field key_bd="garaje_01" /></cell>
+        <cell label_es="Trastero"><field key_bd="trastero_01"  /></cell>
+        <cell label_es="BAÑOS"><field key_bd="n_banos" /></cell>
+        <cell label_es="Ascensor"><field key_bd="ascensor_01" /></cell>
+        <cell label_es="Altura"><field key_bd="direccion_piso"  /></cell>
+        <cell label_es="Terraza"><field key_bd="terraza_01" /></cell>
+        <cell label_es="Piscina"><field key_bd="piscina_01" /></cell>
+    </list>
+    <list name="Buscador" id="c_inmuebles" file="buscador-inmueble">
+        <cell label_es="" ><field key_bd="c_inmuebles" preprocessing="true"/></cell>
+        <cell label_es="Gestion" ><field key_bd="gestion" preprocessing="true"/></cell>
+        <cell label_es="Tipo" ><field key_bd="tipo" preprocessing="true"/></cell>
+        <cell label_es="Zona" ><field key_bd="zona" preprocessing="true"/></cell>
+        <cell label_es="Dorm." ><field key_bd="n_habitaciones"/></cell>
+        <cell label_es="M2" ><field key_bd="m2_utiles"/></cell>
+        <cell label_es="Precio" ><field key_bd="precio_compra" preprocessing="true"/></cell>
+        <cell label_es="Ref." ><field key_bd="referencia"/></cell>
+        <cell label_es="Ver Ficha"><field key_bd="" content="Ver Ficha" href="[base]/inmuebles/ficha/[referencia]" /></cell>
+    </list>
+</lists>

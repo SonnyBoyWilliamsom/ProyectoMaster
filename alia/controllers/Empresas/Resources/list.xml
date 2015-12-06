@@ -1,0 +1,21 @@
+<lists>
+    <list name="Mostrar" id="id">
+        <cell label_es="Nombre"><field key_bd="nombre" /></cell>
+        <cell label_es="Direccion"><field key_bd="direccion" /></cell>
+        <cell label_es="Teléfono"><field key_bd="telefono" /></cell>
+        <cell label_es="Persona de Contacto"><field key_bd="persona_contacto" /></cell>
+        <cell label_es="CIF"><field key_bd="cif" /></cell>
+        <cell label_es="Email"><field key_bd="email" /></cell>
+        <cell label_es="Acción">
+            <field key_bd="" content="Empresa del mes" events-id="10" />
+            <field key_bd="" content="Modificar" events-id="8" />
+            <field key_bd="" content="Eliminar" events-id="9" />
+        </cell>
+        <cell label_es="Eliminar Seleccionados" events-id="6"><field key_bd="" delete-selected="true" /></cell>
+    </list>
+        <list name="Empresas" id="id">
+        <cell label_es=""><field key_bd="id" preprocessing="true"/></cell>
+        <cell label_es=""><field key_bd="telefono" /></cell>
+        <cell label_es=""><field key_bd="web" /></cell>
+    </list>
+</lists>

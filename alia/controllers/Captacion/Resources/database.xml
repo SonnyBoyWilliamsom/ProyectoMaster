@@ -1,0 +1,27 @@
+<tables>
+    <table name="captacion">
+        <column name="id" type="bigint" sign="false" null="false" default="0"/>
+        <column name="c_captacion" type="varchar" sign="false" null="true" default="0"/>
+        <column name="provincia" type="varchar" sign="false" null="true" default="0"/>
+        <column name="municipio" type="varchar" sign="false" null="true" default="0"/>
+        <column name="zona" type="varchar" sign="false" null="true" default="0"/>
+        <column name="sigla_zona" type="varchar" sign="false" null="true" default="0"/>
+        <column name="precio" type="mediumint" sign="false" null="true" default="0"/>
+        <column name="f_entrada" type="date" sign="false" null="true" default="0"/>
+        <column name="precio_ultima" type="mediumint" sign="false" null="true" default="0"/>
+        <column name="direccion" type="varchar" sign="false" null="true" default="0"/>
+        <column name="n_dormitorios" type="tinyint" sign="false" null="true" default="0"/>
+        <column name="caract_pcples" type="varchar" sign="false" null="true" default="0"/>
+        <column name="nombre_propietario" type="varchar" sign="false" null="true" default="0"/>
+        <column name="tlf" type="varchar" sign="false" null="true" default="0"/>
+        <column name="tlf_2" type="varchar" sign="false" null="true" default="0"/>
+        <column name="agente_inserta" type="bigint" sign="false" null="true" default="0"/>
+        <column name="agente_captador" type="bigint" sign="false" null="true" default="0"/>
+        <column name="f_p_llamada" type="date" sign="false" null="true" default="0"/>
+        <column name="f_ultimo_contacto" type="date" sign="false" null="true" default="0"/>
+        <column name="captacion_proceso" type="tinyint" sign="false" null="true" default="0"/>
+        <column name="url" type="varchar" sign="false" null="true" default="0"/>
+        <column name="observaciones" type="varchar" sign="false" null="true" default="0"/>
+        <column name="precio_inicial" type="mediumint" sign="false" null="true" default="0"/>
+    </table>
+</tables>

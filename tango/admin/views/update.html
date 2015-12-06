@@ -1,0 +1,46 @@
+<div class="form">
+	<form action=<?php echo $_SERVER['PHP_SELF'] ?> method="post" > 
+	<div class="input">
+		<label for="name">Name</label>
+		<input type="text" id="name" name="name" value=<?php echo $user->data()->name;?>>
+	</div>
+	<div class="input">
+		<label for="surname">Surname</label>
+		<input type="text" id="surname" name="surname" value=<?php echo $user->data()->surname;?>>
+	</div>
+	<div class="input">
+		<label for="site">Site</label>
+		<input type="text" id="site" name="site" value=<?php echo $user->data()->site;?>>
+	</div>
+	<div class="input">
+		<label for="field">Field</label>
+		<input type="text" id="field" name="field" value=<?php echo $user->data()->field;?>>
+	</div>
+	<!--<div class="input" style='background: #cdcdcd;'>
+		<p>Enter only if you want to change password</p>
+		<label for="password">Current Password</label>
+		<input type="password" id="password" name="currentPassword">
+		<div>
+			<label for="newPass">Enter your new Password </label>
+			<input type="password" name="password" id="newPass">
+			<label for="passCheck">Repeat Password </label>
+			<input type="password" name="passCheck" id="passCheck">
+		</div>
+		
+	</div>
+	<div class="input" style="background:tomato">
+		<p> Enter if you want to change your email. Your current email is: <?php echo  $user->data()->email; ?></p>
+		<label for="email">New Email</label>
+		<input type="email" name="email" id="email">
+		<label for="passwordEmail">Password</label>
+		<input type="password" name="passwordEmail" id="passwordEmail">
+		</label>
+	</div>
+	-->
+	<input type="hidden" name="token" value=<?php echo Token::generate() ?>>
+	<input type="submit" name="update" value="Update">
+
+	<a href="./changepass.php">Update Password</a>
+
+</div>
+

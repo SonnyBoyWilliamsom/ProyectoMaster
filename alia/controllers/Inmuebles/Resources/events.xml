@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<all-events>
+    <events id="1">
+        <onchange><![CDATA[javascript:return cambioDeCategoria(this);]]></onchange>
+    </events>
+    <events id="2">
+        <onchange><![CDATA[javascript:return cambioDeEstado(this);]]></onchange>
+    </events>
+    <events id="3">
+        <onchange><![CDATA[javascript:return cambioDeGestion(this);]]></onchange>
+    </events>
+    <events id="4">
+        <onsubmit><![CDATA[javascript:return insercionDeInmueble(this);]]></onsubmit>
+    </events>
+    <events id="5">
+        <onchange><![CDATA[javascript:return cambioDeExclusividad(this);]]></onchange>
+    </events>
+    <events id="6">
+        <onclick><![CDATA[javascript:eliminarVarios('[controllerName]',[ajax-index:delete_selected],'#tabla_[controllerName]');]]></onclick>
+    </events>
+    <events id="7">
+        <onclick><![CDATA[javascript:actualizarFotos([ajax-index:getpictures],'[id]','[controllerName]','Fotos',[ajax-index:modifypictures],[ajax-index:pictures]);]]></onclick>
+    </events>
+    <events id="8">
+        <onclick><![CDATA[javascript:modificar('[id]','[controllerName]',[ajax-index:getonexml],'Modificar',[ajax-index:poblaciones],[ajax-index:zonas]);]]></onclick>
+    </events>
+    <events id="9">
+        <onclick><![CDATA[javascript:eliminar('[controllerName]',[ajax-index:delete],[id],$('#[id]'));]]></onclick>
+    </events>
+    <events id="10">
+        <onclick><![CDATA[javascript:comparar('[controllerName]',[ajax-index:compare],[id],this);]]></onclick>
+    </events>
+    <events id="11">
+        <onclick><![CDATA[javascript:ordenarPrecio(this,[ajax-index:orderPrice],'[controllerName]');]]></onclick>
+    </events>
+    <events id="12">
+        <onclick><![CDATA[javascript:ordenarZona(this,[ajax-index:orderZone],'[controllerName]');]]></onclick>
+    </events>
+    <events id="13">
+        <onclick><![CDATA[javascript:vendido([id],'#form_[controllerName]_Vendido');]]></onclick>
+    </events>
+    <events id="14">
+        <onclick><![CDATA[javascript:cambioEmpresa(this);]]></onclick>
+    </events>
+    <events id="15">
+        <onclick><![CDATA[javascript:ordenarEstado(this,[ajax-index:orderEstado],'[controllerName]');]]></onclick>
+    </events>
+</all-events>

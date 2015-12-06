@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forms>
+    <form name="Nuevo" subindex="0">
+        <field key_bd="id" tipo="hidden" obligatorio="false" label_es="Código" longitud="0"/>
+        <field key_bd="nombre" tipo="text" obligatorio="true" label_es="Nombre" longitud="50"/>
+        <field key_bd="direccion" tipo="text" obligatorio="true" label_es="Dirección" longitud="150"/>
+        <field key_bd="telefono" tipo="text" obligatorio="true" label_es="Teléfono" longitud="50"/>
+        <field key_bd="web" tipo="text" obligatorio="true" label_es="Web" longitud="20"/>
+        <field key_bd="persona_contacto" tipo="text" obligatorio="true" label_es="Persona de Contacto" longitud="50"/>
+        <field key_bd="cif" tipo="text" obligatorio="false" label_es="CIF" longitud="500"/>
+        <field key_bd="email" tipo="text" obligatorio="false" label_es="Email" longitud="50"/>
+        <field key_bd="logo" tipo="file" obligatorio="false" label_es="Logo" longitud="150"/>
+        <field key_bd="codigo_empresa" id-options="permisos" tipo="text" obligatorio="true" label_es="Código de Empresa" longitud="0"/>
+    </form>
+    <form name="Modificar" subindex="6">
+        <field key_bd="id" tipo="hidden" obligatorio="false" label_es="Código" longitud="0"/>
+        <field key_bd="nombre" tipo="text" obligatorio="true" label_es="Nombre" longitud="50"/>
+        <field key_bd="direccion" tipo="text" obligatorio="true" label_es="Dirección" longitud="150"/>
+        <field key_bd="telefono" tipo="text" obligatorio="true" label_es="Teléfono" longitud="50"/>
+        <field key_bd="web" tipo="text" obligatorio="true" label_es="Web" longitud="20"/>
+        <field key_bd="persona_contacto" tipo="text" obligatorio="true" label_es="Persona de Contacto" longitud="50"/>
+        <field key_bd="cif" tipo="text" obligatorio="false" label_es="CIF" longitud="500"/>
+        <field key_bd="email" tipo="text" obligatorio="false" label_es="Email" longitud="50"/>
+        <field key_bd="logo" tipo="file" obligatorio="false" label_es="Logo" longitud="150"/>
+        <field key_bd="codigo_empresa" id-options="permisos" tipo="text" obligatorio="true" label_es="Código de Empresa" longitud="0"/>
+    </form>
+</forms>

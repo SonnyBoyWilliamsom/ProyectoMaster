@@ -1,0 +1,14 @@
+<lists>
+    <list name="Mostrar" id="id">
+        <cell label_es="Nombre"><field key_bd="nombre" /></cell>
+        <cell label_es="Apellidos"><field key_bd="apellidos" /></cell>
+        <cell label_es="Correo"><field key_bd="mail" /></cell>
+        <cell label_es="Teléfono"><field key_bd="tlf" /></cell>
+        <cell label_es="Empresa"><field key_bd="codigo_empresa" preprocessing="true"/></cell>
+        <cell label_es="Acción">
+            <field key_bd="" content="Modificar" events-id="8" />
+            <field key_bd="" content="Eliminar" events-id="9" />
+        </cell>
+        <cell label_es="Eliminar Seleccionados" events-id="6"><field key_bd="" delete-selected="true" /></cell>
+    </list>
+</lists>

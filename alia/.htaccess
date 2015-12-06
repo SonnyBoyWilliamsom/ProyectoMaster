@@ -1,0 +1,30 @@
+ErrorDocument 404 /milenio/404.php
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^alcorconalia.com [NC]
+RewriteRule ^alcorconalia.com(.*)$ http://www.alcorconalia.com/$1 [L,R=301,NC]
+
+#WebNormal
+RewriteRule pisos-en-alcorcon.php$ index.php?controller=inmuebles&render=busqueda-condicionada
+RewriteRule pisos-en-alcorcon-centro.php$ index.php?controller=inmuebles&render=busqueda-condicionada&param=zona&value=2
+RewriteRule pisos-parque-lisboa.php$ index.php?controller=inmuebles&render=busqueda-condicionada&param=zona&value=9
+RewriteRule pisos-valderas-castillo.php$ index.php?controller=inmuebles&render=busqueda-condicionada&param=zona&value=13
+RewriteRule pisos-en-retamas-prado.php$ index.php?controller=inmuebles&render=busqueda-condicionada&param=zona&value=12
+RewriteRule pisos-parque-oeste.php$ index.php?controller=inmuebles&render=busqueda-condicionada&param=zona&value=10
+RewriteRule pisos-en-ondarreta.php$ index.php?controller=inmuebles&render=busqueda-condicionada&param=zona&value=8
+RewriteRule pisos-en-campodon.php$ index.php?controller=inmuebles&render=busqueda-condicionada&param=zona&value=1
+RewriteRule pisos-juzgados-hacienda.php$ index.php?controller=inmuebles&render=busqueda-condicionada&param=zona&value=7
+RewriteRule pisos-juzgados-hacienda.php$ index.php?controller=inmuebles&render=busqueda-condicionada&param=zona&value=7
+RewriteRule asociados.php$ index.php?controller=index&render=asociados
+RewriteRule asociate.php$ index.php?controller=index&render=asociate
+RewriteRule contacto.php$ index.php?controller=index&render=contacto
+RewriteRule ficha/([A-Za-z0-9\-]*)$ index.php?controller=inmuebles&render=ficha&referencia=$1
+RewriteRule mostrar.php$ index.php?controller=inmuebles&render=buscador
+RewriteRule buscar-referencia.php$ index.php?controller=inmuebles&render=busqueda-condicionada&param=referencia
+RewriteRule aviso-legal-y-privacidad.php$ index.php?controller=index&render=legal
+RewriteRule envio-([A-Za-z0-9\-]*).php$ index.php?controller=index&render=envio&correcto=$1
+
+#Administracion
+RewriteRule admin/historico$ admin/index.php?controller=inmuebles&render=historico [L]
+RewriteRule admin/(\w+)$ admin/index.php?controller=$1

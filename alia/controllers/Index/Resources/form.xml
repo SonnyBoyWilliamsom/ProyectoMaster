@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forms>
+    <form name="Busco" subindex="-1">
+        <field key_bd="nombre" tipo="text" label_es="Nombre" />
+        <field key_bd="apellidos" tipo="text" label_es="Apellidos" />
+        <field key_bd="telefono" tipo="text" label_es="Teléfono" />
+        <field key_bd="mail" tipo="text" label_es="Correo Electrónico" />
+        <field key_bd="quiero" tipo="select" id-options="quiero" label_es="Quiero" />
+        <field key_bd="descripcion" tipo="textarea" label_es="Describe tu interés" />
+    </form>
+    <form name="Contacto" subindex="0">
+        <field key_bd="nombre" tipo="text" label_es="Nombre" />
+        <field key_bd="apellidos" tipo="text" label_es="Apellidos" />
+        <field key_bd="telefono" tipo="text" label_es="Teléfono" />
+        <field key_bd="mail" tipo="text" label_es="Correo Electrónico" />
+        <field key_bd="descripcion" tipo="textarea" label_es="Consulta" />
+    </form>
+    <form name="Asociate" subindex="1">
+        <field key_bd="nombre_inmobiliaria" tipo="text" label_es="Nombre de la Inmobiliaria" />
+        <field key_bd="nombre" tipo="text" label_es="Nombre" />
+        <field key_bd="apellidos" tipo="text" label_es="Apellidos" />
+        <field key_bd="telefono" tipo="text" label_es="Teléfono" />
+        <field key_bd="mail" tipo="text" label_es="Correo Electrónico" />
+        <field key_bd="descripcion" tipo="textarea" label_es="Consulta" />
+    </form>
+    <form name="Mas-Info" subindex="2">
+        <field key_bd="referencia" tipo="text" label_es="Referencia" />
+        <field key_bd="nombre" tipo="text" label_es="Nombre" />
+        <field key_bd="apellidos" tipo="text" label_es="Apellidos" />
+        <field key_bd="telefono" tipo="text" label_es="Teléfono" />
+        <field key_bd="mail" tipo="text" label_es="Correo Electrónico" />
+        <field key_bd="descripcion" tipo="textarea" label_es="Consulta" />
+    </form>
+</forms>

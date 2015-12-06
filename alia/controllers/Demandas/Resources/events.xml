@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<all-events>
+    <events id="1">
+        <onsubmit><![CDATA[javascript:return busquedaAvanzada(this,'#tabla_demandas');]]></onsubmit>
+        <onreset><![CDATA[javascript:deshacerBusqueda(this,'#tabla_demandas');]]></onreset>
+    </events>
+    <events id="2">
+        <onchange><![CDATA[javascript:cargarPresupuestos(this.value,$('.presupuesto'),'[controllerName]',[ajax-index:presupuesto]);]]></onchange>
+    </events>
+    <events id="6">
+        <onclick><![CDATA[javascript:eliminarVarios('[controllerName]',[ajax-index:delete_selected],'#tabla_[controllerName]');]]></onclick>
+    </events>
+    <events id="7">
+        <onclick><![CDATA[javascript:actualizarFotos([ajax-index:getpictures],'[id]','[controllerName]','Fotos',[ajax-index:modifypictures],[ajax-index:pictures]);]]></onclick>
+    </events>
+    <events id="8">
+        <onclick><![CDATA[javascript:modificar('[id]','[controllerName]',[ajax-index:getonexml],'Modificar',[ajax-index:poblaciones],[ajax-index:zonas]);]]></onclick>
+    </events>
+    <events id="9">
+        <onclick><![CDATA[javascript:eliminar('[controllerName]',[ajax-index:delete],[id],$('#[id]'));]]></onclick>
+    </events>
+</all-events>

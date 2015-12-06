@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forms>
+    <form name="Mostrar" subindex="-1">
+        <field key_bd="id" tipo="oculto" obligatorio="0" label_es="Código" longitud="0" />
+        <field key_bd="nombre" tipo="text" obligatorio="1" label_es="Nombre" longitud="50" />
+    </form>
+    <form name="Nuevo" subindex="0">
+        <field key_bd="id" tipo="oculto" obligatorio="0" label_es="Código" longitud="0" />
+        <field key_bd="nombre" tipo="text" obligatorio="1" label_es="Nombre" longitud="50" />
+    </form>
+    <form name="Modificar" subindex="5">
+        <field key_bd="id" tipo="hidden" obligatorio="0" label_es="Código" longitud="0" />
+        <field key_bd="nombre" tipo="text" obligatorio="1" label_es="Nombre" longitud="50" />
+    </form>
+</forms>

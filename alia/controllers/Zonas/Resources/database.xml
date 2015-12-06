@@ -1,0 +1,21 @@
+<tables>
+    <table name="provincias">
+        <column name="id" type="bigint" sign="false" null="false" default="0"/>
+        <column name="nombre" type="varchar" sign="false" null="true" default="0"/>
+        <column name="activa" type="tinyint" sign="false" null="false" default="0"/>
+    </table>
+    <table name="poblaciones">
+        <column name="id" type="bigint" sign="false" null="false" default="0"/>
+        <column name="nombre" type="varchar" sign="false" null="true" default="0"/>
+        <column name="codigo_pr" type="bigint" sign="false" null="false" default="0"/>
+        <column name="activa" type="tinyint" sign="false" null="true" default="0"/>
+        <column name="principal" type="tinyint" sign="false" null="false" default="0"/>
+    </table>
+    <table name="zonas">
+        <column name="id" type="bigint" sign="false" null="false" default="0"/>
+        <column name="nombre" type="varchar" sign="false" null="true" default="0"/>
+        <column name="codigo_po" type="bigint" sign="false" null="false" default="0"/>
+        <column name="activa" type="tinyint" sign="false" null="false" default="0"/>
+        <column name="nombre_admin" type="varchar" sign="false" null="true" default="0"/>
+    </table>
+</tables>

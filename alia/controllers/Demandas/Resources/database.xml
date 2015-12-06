@@ -1,0 +1,21 @@
+<tables>
+    <table name="demandas">
+        <column name="id" type="bigint" sign="false" null="false" default="0"/>
+        <column name="id_cliente" type="bigint" sign="false" null="false" default="0"/>
+        <column name="presupuesto" type="bigint" sign="false" null="true" default="0"/>
+        <column name="c_provincia" type="bigint" sign="false" null="true" default="0"/>
+        <column name="c_poblacion" type="bigint" sign="false" null="true" default="0"/>
+        <column name="c_zona" type="bigint" sign="false" null="true" default="0"/>
+        <column name="c_tipo" type="bigint" sign="false" null="true" default="0"/>
+        <column name="dormitorios" type="smallint" sign="false" null="true" default="0"/>
+        <column name="ascensor" type="smallint" sign="false" null="true" default="0"/>
+        <column name="garaje" type="smallint" sign="false" null="true" default="0"/>
+        <column name="trastero" type="smallint" sign="false" null="true" default="0"/>
+        <column name="piscina" type="smallint" sign="false" null="true" default="0"/>
+        <column name="fecha_creacion" type="date" sign="false" null="true" default="0"/>
+        <column name="fecha_expiracion" type="date" sign="false" null="true" default="0"/>
+        <column name="activa" type="tinyint" sign="false" null="false" default="1"/>
+        <column name="referencia" type="bigint" sign="false" null="false" default="0"/>
+        <column name="tipo" type="smallint" sign="false" null="false" default="0"/>
+    </table>
+</tables>

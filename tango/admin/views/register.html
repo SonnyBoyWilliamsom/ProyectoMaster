@@ -1,0 +1,24 @@
+
+<form action=<?php echo $_SERVER['PHP_SELF'] ?> method="post">
+	<div class="field">
+		<label for="name">Name</label>
+		<input name="name" type="text" id="name" value="<?php echo addslashes(Input::get('name')); ?>" autocomplete="off"/>
+	</div>
+	<div class="password">
+		<label for="password">Password</label>
+		<input name="password" type="password" id="password"/> 
+	</div>
+	<div class="passCheck">
+		<label for="passCheck">Enter your password again</label>
+		<input name="passCheck" type="password" id="passCheck"/> 
+	</div>
+	<div class="email">
+		<label for="email">email</label>
+		<input name="email" type="email" id="email" value="<?php echo addslashes(Input::get('email')); ?>"/> 
+	</div>
+	<input type="hidden" name="token" value="<?php echo Token::generate(); ?>"/>
+	<input type="submit" value="Register" />
+
+
+	<p>Or <a href="./login.php" title="SignIn">Log in</a></p>
+</form>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forms>
+    <form name="Nuevo" subindex="0">
+        <field key_bd="id" tipo="oculto" obligatorio="0" label_es="Código" longitud="20" />
+        <field key_bd="nombre" tipo="text" obligatorio="0" label_es="Nombre" longitud="100" />
+        <field key_bd="activa" tipo="checkbox" obligatorio="0" label_es="Activa" longitud="1" />
+    </form>
+    <form name="Modificar" subindex="3">
+        <field key_bd="id" tipo="hidden" obligatorio="0" label_es="Código" longitud="20" />
+        <field key_bd="nombre" tipo="text" obligatorio="0" label_es="Nombre" longitud="100" />
+        <field key_bd="activa" tipo="checkbox" obligatorio="0" label_es="Activa" longitud="1" />
+    </form>
+</forms>
